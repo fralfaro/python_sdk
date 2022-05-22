@@ -14,8 +14,6 @@ edit_uri: ''
 # TOC
 nav:
     - Home: index.md
-    - Programación: intro_progra.md
-
 
 # Markdown extensions
 markdown_extensions:
