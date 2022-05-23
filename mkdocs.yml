@@ -13,7 +13,7 @@ edit_uri: ''
 
 # TOC
 nav:
-    - Home: index/index.md
+    - Home: index.md
     - Setup:
       - Pyenv: setup/pyenv.md
       - Venv: setup/virtualenv.md
