@@ -13,14 +13,9 @@ edit_uri: ''
 
 # TOC
 nav:
-    - Blog:
-      - blog/index.md
-      - 2022:
-        - blog/2022/chinese-search-support.md
-      - 2021:
-        - blog/2021/the-past-present-and-future.md
-        - blog/2021/excluding-content-from-search.md
-        - blog/2021/search-better-faster-smaller.md
+    - Home: index.md
+
+
 # Markdown extensions
 markdown_extensions:
   - attr_list
@@ -42,20 +37,7 @@ extra_javascript:
 
 # Theme
 theme:
-  name: null
-  custom_dir: !ENV [THEME_DIR, "material"]
-
-  # Static files
-  static_templates:
-    - 404.html
-
-  font:
-    text: Roboto
-    code: Roboto Mono
-  favicon: assets/favicon.png
-  icon:
-    logo: logo
-
+  name: material
   language: es
   palette:
   - media: "(prefers-color-scheme: light)"
