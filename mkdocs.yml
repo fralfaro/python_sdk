@@ -2,20 +2,20 @@
 
 # Project information
 site_name: Home
-site_url: https://github.com/fralfaro/<PROJECT>
+site_url: https://github.com/fralfaro/python_sdk
 site_author: Francisco Alfaro
 site_description:
 
 # Repository
 repo_name: fralfaro/python_intro
-repo_url: https://github.com/fralfaro/python_intro
+repo_url: https://github.com/fralfaro/python_sdk
 edit_uri: ''
 
 # TOC
 nav:
-    - Home: index.md
+    - Home: index/index.md
     - Setup:
-      - Pyenv: /setup/pyenv.md
+      - Pyenv: setup/pyenv.md
       - Venv: setup/virtualenv.md
       - Poetry: setup/poetry.md
 
