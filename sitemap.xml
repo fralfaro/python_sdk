@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://github.com/fralfaro/&lt;PROJECT&gt;/</loc>
+         <loc>https://github.com/fralfaro/python_sdk/index/</loc>
+         <lastmod>2022-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/setup/poetry/</loc>
+         <lastmod>2022-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/setup/pyenv/</loc>
+         <lastmod>2022-05-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/setup/virtualenv/</loc>
          <lastmod>2022-05-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
