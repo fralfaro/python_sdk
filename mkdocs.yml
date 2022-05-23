@@ -13,7 +13,6 @@ edit_uri: ''
 
 # TOC
 nav:
-    - Home: index.md
     - Blog:
       - blog/index.md
       - 2022:
@@ -43,7 +42,20 @@ extra_javascript:
 
 # Theme
 theme:
-  name: material
+  name: null
+  custom_dir: !ENV [THEME_DIR, "material"]
+
+  # Static files
+  static_templates:
+    - 404.html
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
   language: es
   palette:
   - media: "(prefers-color-scheme: light)"
