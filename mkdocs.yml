@@ -27,9 +27,19 @@ nav:
       - Polimorfismo: oop/oop_polimorfismo.md
       - Acoplamiento: oop/oop_acoplamiento.md
       - Encapsulamiento: oop/oop_encapsulamiento.md
-
-
-
+    - Prácticas:
+      - Diseño de Patrones: pragmatic/patterns/intro.md
+        - Patrones:
+            - creacionales: pragmatic/patterns/creacionales.md
+            - estructurales: pragmatic/patterns/estructurales.md
+            - comportamiento: pragmatic/patterns/comportamiento.md
+      - SOLID: pragmatic/solid/intro.md
+        - Principios:
+            - solid1: pragmatic/solid/1_srp.md
+            - solid2: pragmatic/solid/2_ocp.md
+            - solid3: pragmatic/solid/3_lsp.md
+            - solid4: pragmatic/solid/4_isp.md
+            - solid5: pragmatic/solid/5_dip.md
 
 
 # Markdown extensions
