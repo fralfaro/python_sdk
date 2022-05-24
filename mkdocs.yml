@@ -28,7 +28,7 @@ nav:
       - Acoplamiento: oop/oop_acoplamiento.md
       - Encapsulamiento: oop/oop_encapsulamiento.md
     - Prácticas:
-      - Diseño de Patrones: pragmatic/patterns/intro.md
+      - Design Patterns: pragmatic/patterns/intro.md
         - Patrones:
             - creacionales: pragmatic/patterns/creacionales.md
             - estructurales: pragmatic/patterns/estructurales.md
