@@ -20,13 +20,13 @@ nav:
       - Poetry: setup/poetry.md
     - OOP:
       - Introducción: oop/oop.md
-      - Conceptos Básicos: oop/oop_conceptos_basicos.ipynb
-      - Herencia: oop/oop_herencia.ipynb
-      - Cohesion: oop/oop_cohesion.ipynb
-      - Abstraccion: oop/oop_abstraccion.ipynb
-      - Polimorfismo: oop/oop_polimorfismo.ipynb
-      - Acoplamiento: oop/oop_acoplamiento.ipynb
-      - Encapsulamiento: oop/oop_encapsulamiento.ipynb
+      - Conceptos Básicos: oop/oop_conceptos_basicos.md
+      - Herencia: oop/oop_herencia.md
+      - Cohesion: oop/oop_cohesion.md
+      - Abstraccion: oop/oop_abstraccion.md
+      - Polimorfismo: oop/oop_polimorfismo.md
+      - Acoplamiento: oop/oop_acoplamiento.md
+      - Encapsulamiento: oop/oop_encapsulamiento.md
 
 
 
