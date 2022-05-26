@@ -2,112 +2,212 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/fralfaro/python_sdk/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/code_quality/black/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/code_quality/code_quality/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/code_quality/flake8/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/code_quality/mypy/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/code_quality/precommit/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/documentation/commenting/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/documentation/documenting/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/documentation/intro/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/documentation/project/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/documentation/sphinx/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/ecosystem/click/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/ecosystem/diagrams/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/ecosystem/loguru/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/ecosystem/plantuml/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/ecosystem/pydantic/</loc>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/oop/oop/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/oop/oop_abstraccion/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/oop/oop_acoplamiento/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/oop/oop_cohesion/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/oop/oop_conceptos_basicos/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/oop/oop_encapsulamiento/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/oop/oop_herencia/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/oop/oop_polimorfismo/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/patterns/comportamiento/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/patterns/creacionales/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/patterns/estructurales/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/patterns/intro/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/setup/poetry/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/setup/pyenv/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/setup/virtualenv/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/solid/1_srp/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/solid/2_ocp/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/solid/3_lsp/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/solid/4_isp/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/solid/5_dip/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_sdk/solid/intro/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/testing/hypothesis/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/testing/intro/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/testing/mocker/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/testing/plugins/</loc>
+         <lastmod>2022-05-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_sdk/testing/pytest/</loc>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
