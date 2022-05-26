@@ -22,7 +22,3 @@ https://github.com/fralfaro/python_sdk
 * Code Quality
 * Testing
 * Documentación
-
-
-
-

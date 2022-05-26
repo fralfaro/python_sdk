@@ -39,6 +39,30 @@ nav:
       - Liskov Substitution Principle: solid/3_lsp.md
       - Interface Segregation Principle: solid/4_isp.md
       - Dependency Inversion Principle: solid/5_dip.md
+    - Code Quality:
+      - Introducción: code_quality/code_quality.md
+      - Black: code_quality/black.md
+      - Flake8: code_quality/flake8.md
+      - Mypy: code_quality/mypy.md
+      - Pre-commit: code_quality/precommit.md
+    - Testing:
+      - Introducción: testing/intro.md
+      - Pytest: testing/pytest.md
+      - Mocker: testing/mocker.md
+      - Hypothesis: testing/hypothesis.md
+      - Plugins: testing/plugins.md
+    - Documentación:
+      - Introducción: documentation/intro.md
+      - Comentar vs Documentar: documentation/commenting.md
+      - Docstrings: documentation/documenting.md
+      - Documentar en Python: documentation/project.md
+      - Sphinx: documentation/sphinx.md
+    - Ecosistema Python:
+      - Click: ecosystem/click.md
+      - Loguru: ecosystem/loguru.md
+      - Loguru: ecosystem/loguru.md
+      - Plantuml: ecosystem/plantuml.md
+      - Diagrams: ecosystem/diagrams.md
 
 
 # Markdown extensions
