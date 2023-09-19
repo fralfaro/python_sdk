@@ -1,5 +1,3 @@
-# Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
-
 # Project information
 site_name: Home
 site_url: https://github.com/fralfaro/python_sdk
@@ -11,63 +9,11 @@ repo_name: fralfaro/python_sdk
 repo_url: https://github.com/fralfaro/python_sdk
 edit_uri: ''
 
-# TOC
-nav:
-    - Home: index.md
-    - Setup:
-      - Pyenv: setup/pyenv.md
-      - Venv: setup/virtualenv.md
-      - Poetry: setup/poetry.md
-    - OOP:
-      - Introducción: oop/oop.md
-      - Conceptos Básicos: oop/oop_conceptos_basicos.md
-      - Herencia: oop/oop_herencia.md
-      - Cohesion: oop/oop_cohesion.md
-      - Abstraccion: oop/oop_abstraccion.md
-      - Polimorfismo: oop/oop_polimorfismo.md
-      - Acoplamiento: oop/oop_acoplamiento.md
-      - Encapsulamiento: oop/oop_encapsulamiento.md
-    - Design Patterns:
-      - Introduccion: patterns/intro.md
-      - Patrones de creación: patterns/creacionales.md
-      - Patrones estructurales: patterns/estructurales.md
-      - Patrones de comportamiento: patterns/comportamiento.md
-    - SOLID:
-      - Introduccion: solid/intro.md
-      - Single Responsibility Principle: solid/1_srp.md
-      - Single Responsibility Principle: solid/2_ocp.md
-      - Liskov Substitution Principle: solid/3_lsp.md
-      - Interface Segregation Principle: solid/4_isp.md
-      - Dependency Inversion Principle: solid/5_dip.md
-    - Code Quality:
-      - Introducción: code_quality/code_quality.md
-      - Black: code_quality/black.md
-      - Flake8: code_quality/flake8.md
-      - Mypy: code_quality/mypy.md
-      - Pre-commit: code_quality/precommit.md
-    - Testing:
-      - Introducción: testing/intro.md
-      - Pytest: testing/pytest.md
-      - Mocker: testing/mocker.md
-      - Hypothesis: testing/hypothesis.md
-      - Plugins: testing/plugins.md
-    - Documentación:
-      - Introducción: documentation/intro.md
-      - Comentar vs Documentar: documentation/commenting.md
-      - Docstrings: documentation/documenting.md
-      - Documentar en Python: documentation/project.md
-      - Sphinx: documentation/sphinx.md
-    - Ecosistema Python:
-      - Click: ecosystem/click.md
-      - Loguru: ecosystem/loguru.md
-      - Loguru: ecosystem/loguru.md
-      - Plantuml: ecosystem/plantuml.md
-      - Diagrams: ecosystem/diagrams.md
-
 
 # Markdown extensions
 markdown_extensions:
   - attr_list
+  - admonition
   - md_in_html
   - pymdownx.arithmatex:
       generic: true
@@ -75,14 +21,9 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - admonition
-  - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tabbed
 
 # Extra javascript
 extra_javascript:
@@ -94,21 +35,91 @@ extra_javascript:
 theme:
   name: material
   language: es
+  logo: images/sdk.png
+  favicon: images/logo_fam.png
+  features:
+    - navigation.instant
+    - navigation.top
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
   palette:
-  - media: "(prefers-color-scheme: light)"
-    scheme: default
-    primary: blue grey
-    accent: amber
-    toggle:
-      icon: material/lightbulb
-      name: Switch to light mode
-  - media: "(prefers-color-scheme: dark)"
-    scheme: slate
-    primary: blue grey
-    accent: amber
-    toggle:
-      icon: material/lightbulb-outline
-      name: Switch to dark mode
+    # Light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
 
-extra_css:
-  - stylesheets/extra.css
+    # Dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fralfaro
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/fralfaro
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/faam/
+    - icon: fontawesome/brands/kaggle
+      link: https://www.kaggle.com/faamds
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@fralfaro
+    - icon: fontawesome/solid/globe
+      link: https://fralfaro.github.io/portfolio/
+
+# Plugins
+plugins:
+  - mkdocs-jupyter:
+      kernel_name: python3
+  - search
+
+# TOC
+nav:
+    - index.md
+    - Setup:
+        - Pyenv: setup/pyenv.md
+        - Virtualenv: setup/virtualenv.md
+        - Poetry: setup/poetry.md
+        - Git: git/git.md
+        - GitHub: git/github.md
+    - Programming:
+        - S.O.L.I.D.: programming/solid.md
+        - Design Patterns: programming/design_pattern.md
+        - Refactoring: programming/refactoring.md
+    - Ecosystem:
+        - P.E.P.: programming/pep.md
+        - Programming Paradigms:
+            - Introduction: programming/paradigm.md
+            - Functions: programming/function.md
+            - Classes: programming/classes.md
+        - Typing: ecosystem/typing.md
+        - Pydantic: ecosystem/pydantic.md
+    - Utilities:
+        - Logging: utilities/logging.md
+        - Styling: utilities/styling.md
+        - Pre-commit: utilities/precommit.md
+    - Testing:
+        - Introduction: testing/intro.md
+        - Pytest: testing/pytest.md
+        - Coverage: testing/coverage.md
+        - Mocking: testing/mocking.md
+        - Hypothesis: testing/hypothesis.md
+    - Documentation:
+        - Introduction: documentation/intro.md
+        - Mkdocs: documentation/mkdocs.md
+        - Mkdocs-Material: documentation/mkdocs-material.md
+        - Mkdocs-Plugging: documentation/mkdocs-plugging.md
+    - Extras:
+        - diagrams/plantuml.ipynb
+        - diagrams/diagrams.ipynb
