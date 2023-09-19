@@ -1131,9 +1131,9 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">diagrams.aws.compute</span> <span class="kn">import</span> <span class="n">EC2</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span> <span class="nn">diagrams.aws.database</span> <span class="kn">import</span> <span class="n">RDS</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">with</span> <span class="n">Diagram</span><span class="p">(</span><span class="s2">&quot;Arquitectura AWS&quot;</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">diagram</span><span class="p">:</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">web_server</span> <span class="o">=</span> <span class="n">EC2</span><span class="p">(</span><span class="s2">&quot;Servidor Web&quot;</span><span class="p">)</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">database</span> <span class="o">=</span> <span class="n">RDS</span><span class="p">(</span><span class="s2">&quot;Base de Datos&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">with</span> <span class="n">Diagram</span><span class="p">(</span><span class="s2">&quot;AWS Architecture&quot;</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">diagram</span><span class="p">:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">web_server</span> <span class="o">=</span> <span class="n">EC2</span><span class="p">(</span><span class="s2">&quot;Web Server&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">database</span> <span class="o">=</span> <span class="n">RDS</span><span class="p">(</span><span class="s2">&quot;Database&quot;</span><span class="p">)</span>
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="n">web_server</span> <span class="o">&gt;&gt;</span> <span class="n">database</span>
 <a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="n">diagram</span>
@@ -1148,11 +1148,11 @@
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kn">from</span> <span class="nn">diagrams.onprem.compute</span> <span class="kn">import</span> <span class="n">Server</span>
 <a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="kn">from</span> <span class="nn">diagrams.generic.os</span> <span class="kn">import</span> <span class="n">LinuxGeneral</span>
 <a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="k">with</span> <span class="n">Diagram</span><span class="p">(</span><span class="s2">&quot;Arquitectura On-Premise&quot;</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">diagram</span><span class="p">:</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="s2">&quot;Usuario&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="k">with</span> <span class="n">Diagram</span><span class="p">(</span><span class="s2">&quot;On-Premise Architecture&quot;</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">diagram</span><span class="p">:</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="s2">&quot;User&quot;</span><span class="p">)</span>
 <a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">switch</span> <span class="o">=</span> <span class="n">Switch</span><span class="p">(</span><span class="s2">&quot;Switch&quot;</span><span class="p">)</span>
 <a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">router</span> <span class="o">=</span> <span class="n">Router</span><span class="p">(</span><span class="s2">&quot;Router&quot;</span><span class="p">)</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="n">server</span> <span class="o">=</span> <span class="n">Server</span><span class="p">(</span><span class="s2">&quot;Servidor&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="n">server</span> <span class="o">=</span> <span class="n">Server</span><span class="p">(</span><span class="s2">&quot;Server&quot;</span><span class="p">)</span>
 <a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="n">linux</span> <span class="o">=</span> <span class="n">LinuxGeneral</span><span class="p">(</span><span class="s2">&quot;Linux&quot;</span><span class="p">)</span>
 <a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
 <a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="n">user</span> <span class="o">&gt;&gt;</span> <span class="n">switch</span> <span class="o">&gt;&gt;</span> <span class="n">router</span> <span class="o">&gt;&gt;</span> <span class="n">server</span> <span class="o">&gt;&gt;</span> <span class="n">linux</span>
@@ -1165,7 +1165,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">diagrams.programming.framework</span> <span class="kn">import</span> <span class="n">React</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span> <span class="nn">diagrams.programming.framework</span> <span class="kn">import</span> <span class="n">Fastapi</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">with</span> <span class="n">Diagram</span><span class="p">(</span><span class="s2">&quot;Arquitectura de Aplicación Web&quot;</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">diagram</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">with</span> <span class="n">Diagram</span><span class="p">(</span><span class="s2">&quot;Web Application Architecture&quot;</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">diagram</span><span class="p">:</span>
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">frontend</span> <span class="o">=</span> <span class="n">React</span><span class="p">(</span><span class="s2">&quot;Frontend&quot;</span><span class="p">)</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="n">backend</span> <span class="o">=</span> <span class="n">Fastapi</span><span class="p">(</span><span class="s2">&quot;Backend&quot;</span><span class="p">)</span>
 <a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
@@ -1177,17 +1177,18 @@
 <p>La biblioteca "diagrams" también proporciona componentes para representar Software como Servicio (SaaS) que se pueden utilizar en su arquitectura. Esto es útil cuando desea mostrar integraciones con servicios externos como Slack, Gmail, etc.</p>
 <p>Ejemplo:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">diagrams.gcp.ml</span> <span class="kn">import</span> <span class="n">AIPlatform</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kn">from</span> <span class="nn">diagrams.saas.chat</span> <span class="kn">import</span> <span class="n">Slack</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">with</span> <span class="n">Diagram</span><span class="p">(</span><span class="s2">&quot;Integración con SaaS&quot;</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">diagram</span><span class="p">:</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">app</span> <span class="o">=</span> <span class="n">AIPlatform</span><span class="p">(</span><span class="s2">&quot;Tu Aplicación&quot;</span><span class="p">)</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="n">slack</span> <span class="o">=</span> <span class="n">Slack</span><span class="p">(</span><span class="s2">&quot;Slack&quot;</span><span class="p">)</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="n">app</span> <span class="o">&gt;&gt;</span> <span class="n">slack</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">diagram</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span> <span class="nn">diagrams.saas.chat</span> <span class="kn">import</span> <span class="n">Slack</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">with</span> <span class="n">Diagram</span><span class="p">(</span><span class="s2">&quot;Integration with SaaS&quot;</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">diagram</span><span class="p">:</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="n">app</span> <span class="o">=</span> <span class="n">AIPlatform</span><span class="p">(</span><span class="s2">&quot;Your Application&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">slack</span> <span class="o">=</span> <span class="n">Slack</span><span class="p">(</span><span class="s2">&quot;Slack&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="n">app</span> <span class="o">&gt;&gt;</span> <span class="n">slack</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="n">diagram</span>
 </code></pre></div>
-<p><img alt="png" src="../diagrams_files/diagrams_11_0.png" /></p>
+<div class="highlight"><pre><span></span><code>Warning: node &#39;d06d55f8d4884416b3bc92dfda6bba44&#39;, graph &#39;Integration with SaaS&#39; size too small for label
+</code></pre></div>
+<p><img alt="png" src="../diagrams_files/diagrams_11_1.png" /></p>
 <h2 id="mas-conceptos">Más conceptos</h2>
 <h3 id="nodes">Nodes</h3>
 <p><code>Node</code> es un segundo objeto que representa un nodo o componente del sistema. <code>Node</code> es un concepto abstracto que representa un único objeto componente del sistema.</p>
@@ -1220,7 +1221,6 @@
 <a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="p">(</span><span class="n">ELB</span><span class="p">(</span><span class="s2">&quot;lb&quot;</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="n">EC2</span><span class="p">(</span><span class="s2">&quot;web&quot;</span><span class="p">))</span> <span class="o">-</span> <span class="n">EC2</span><span class="p">(</span><span class="s2">&quot;web&quot;</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="n">RDS</span><span class="p">(</span><span class="s2">&quot;userdb&quot;</span><span class="p">)</span>
 <a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="n">node</span>
 </code></pre></div>
-<p><img alt="png" src="../diagrams_files/diagrams_17_0.png" /></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Tenga cuidado al usar `-` y cualquier operador de turno juntos, lo que podría causar resultados inesperados debido a la precedencia del operador.
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>El orden de los diagramas renderizados es el inverso del orden de declaración.
@@ -1243,7 +1243,6 @@
 <a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>    <span class="n">lb</span> <span class="o">&gt;&gt;</span> <span class="n">EC2</span><span class="p">(</span><span class="s2">&quot;worker5&quot;</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="n">db</span>
 <a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="n">node</span>
 </code></pre></div>
-<p><img alt="png" src="../diagrams_files/diagrams_22_0.png" /></p>
 <h4 id="group-data-flow">Group Data Flow</h4>
 <p>El ejemplo del <code>worker</code> anterior tiene demasiados flujos redundantes. En este caso, puede agrupar nodos en una lista para que todos los nodos estén conectados a otros nodos a la vez.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span> <span class="nn">diagrams</span> <span class="kn">import</span> <span class="n">Diagram</span>
@@ -1260,7 +1259,6 @@
 <a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>
 <a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="n">node</span>
 </code></pre></div>
-<p><img alt="png" src="../diagrams_files/diagrams_24_0.png" /></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>No puede conectar dos listas directamente porque las operaciones `shift/arithmetic` entre listas no están permitidas en Python.
 </code></pre></div>
 <h3 id="clusters">Clusters</h3>
@@ -1283,7 +1281,6 @@
 <a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>    <span class="n">dns</span> <span class="o">&gt;&gt;</span> <span class="n">web</span> <span class="o">&gt;&gt;</span> <span class="n">db_master</span>
 <a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="n">cluster</span>
 </code></pre></div>
-<p><img alt="png" src="../diagrams_files/diagrams_27_0.png" /></p>
 <h3 id="nested-clusters">Nested Clusters</h3>
 <p>También es posible la agrupación en clústeres anidados.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">from</span> <span class="nn">diagrams</span> <span class="kn">import</span> <span class="n">Cluster</span><span class="p">,</span> <span class="n">Diagram</span>
@@ -1316,7 +1313,6 @@
 <a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a>    <span class="n">handlers</span> <span class="o">&gt;&gt;</span> <span class="n">dw</span>
 <a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a><span class="n">cluster</span>
 </code></pre></div>
-<p><img alt="png" src="../diagrams_files/diagrams_29_0.png" /></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>No hay límite de profundidad de anidación. Siéntase libre de crear clústeres anidados con la profundidad que desee.
 </code></pre></div>
 <h3 id="edges">Edges</h3>
@@ -1360,9 +1356,6 @@
 <a id="__codelineno-17-36" name="__codelineno-17-36" href="#__codelineno-17-36"></a>    <span class="n">ingress</span> <span class="o">&gt;&gt;</span> <span class="n">Edge</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;darkgreen&quot;</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">grpcsvc</span> <span class="o">&gt;&gt;</span> <span class="n">Edge</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;darkorange&quot;</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="n">aggregator</span>
 <a id="__codelineno-17-37" name="__codelineno-17-37" href="#__codelineno-17-37"></a><span class="n">edges</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Warning: Orthogonal edges do not currently handle edge labels. Try using xlabels.
-</code></pre></div>
-<p><img alt="png" src="../diagrams_files/diagrams_32_1.png" /></p>
 <h2 id="conclusion">Conclusión</h2>
 <p>Diagrams es una herramienta poderosa que facilita la creación de diagramas como código en Python. Te permite representar infraestructuras y arquitecturas de manera eficiente, lo que es útil para la documentación, la colaboración y la automatización. Al utilizar Diagrams, puedes mejorar la comprensión y la comunicación de tus diseños y proyectos.</p>
 <h2 id="referencias">Referencias</h2>
