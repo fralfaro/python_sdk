@@ -1,3 +1,0 @@
-@startuml
-Clase1 <|-- Clase2
-@enduml
