@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://github.com/fralfaro/python_sdk/setup/poetry/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
     
     
       
@@ -21,12 +21,14 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
         
       
+      
+
     
     
     
@@ -41,10 +43,11 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -69,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#poetry" class="md-skip">
+        <a href="#poetry-gestion-de-dependencias" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -113,6 +116,7 @@
         
           
           
+          
           <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
@@ -120,6 +124,7 @@
             </label>
           
         
+          
           
           
           <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
@@ -147,7 +152,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -171,7 +176,7 @@
         <a href="https://github.com/fralfaro/python_sdk" title="Ir al repositorio" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     fralfaro/python_sdk
@@ -216,7 +221,7 @@
       <a href="https://github.com/fralfaro/python_sdk" title="Ir al repositorio" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     fralfaro/python_sdk
@@ -339,23 +344,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalacion" class="md-nav__link">
-    Instalación
+  <a href="#instalacion-de-poetry" class="md-nav__link">
+    Instalación de Poetry
   </a>
   
-    <nav class="md-nav" aria-label="Instalación">
+    <nav class="md-nav" aria-label="Instalación de Poetry">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#osx-linux-bashonwindows" class="md-nav__link">
-    osx / linux / bashonwindows
+  <a href="#macos-linux-bash-en-windows" class="md-nav__link">
+    macOS / Linux / bash en Windows
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#windows-powershell" class="md-nav__link">
-    windows powershell
+    Windows PowerShell
   </a>
   
 </li>
@@ -366,36 +371,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#crear-un-proyecto-con-poetry" class="md-nav__link">
-    Crear un proyecto con poetry
+  <a href="#creacion-de-un-proyecto-con-poetry" class="md-nav__link">
+    Creación de un Proyecto con Poetry
   </a>
   
-    <nav class="md-nav" aria-label="Crear un proyecto con poetry">
+    <nav class="md-nav" aria-label="Creación de un Proyecto con Poetry">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#una-configuracion-para-manejar-todo" class="md-nav__link">
-    Una configuración para manejar todo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#poetry-cli" class="md-nav__link">
-    Poetry CLI
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instalacion-y-gestion-de-dependencias" class="md-nav__link">
-    Instalación y gestión de dependencias
+  <a href="#configuracion-centralizada" class="md-nav__link">
+    Configuración Centralizada
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-la-cli-de-poetry" class="md-nav__link">
+    Uso de la CLI de Poetry
+  </a>
   
 </li>
       
@@ -448,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop/" class="md-nav__link">
+      <a href="../../oop/oop.md" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -462,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_conceptos_basicos/" class="md-nav__link">
+      <a href="../../oop/oop_conceptos_basicos.md" class="md-nav__link">
         Conceptos Básicos
       </a>
     </li>
@@ -476,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_herencia/" class="md-nav__link">
+      <a href="../../oop/oop_herencia.md" class="md-nav__link">
         Herencia
       </a>
     </li>
@@ -490,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_cohesion/" class="md-nav__link">
+      <a href="../../oop/oop_cohesion.md" class="md-nav__link">
         Cohesion
       </a>
     </li>
@@ -504,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_abstraccion/" class="md-nav__link">
+      <a href="../../oop/oop_abstraccion.md" class="md-nav__link">
         Abstraccion
       </a>
     </li>
@@ -518,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_polimorfismo/" class="md-nav__link">
+      <a href="../../oop/oop_polimorfismo.md" class="md-nav__link">
         Polimorfismo
       </a>
     </li>
@@ -532,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_acoplamiento/" class="md-nav__link">
+      <a href="../../oop/oop_acoplamiento.md" class="md-nav__link">
         Acoplamiento
       </a>
     </li>
@@ -546,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_encapsulamiento/" class="md-nav__link">
+      <a href="../../oop/oop_encapsulamiento.md" class="md-nav__link">
         Encapsulamiento
       </a>
     </li>
@@ -594,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/intro/" class="md-nav__link">
+      <a href="../../patterns/intro.md" class="md-nav__link">
         Introduccion
       </a>
     </li>
@@ -608,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/creacionales/" class="md-nav__link">
+      <a href="../../patterns/creacionales.md" class="md-nav__link">
         Patrones de creación
       </a>
     </li>
@@ -622,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/estructurales/" class="md-nav__link">
+      <a href="../../patterns/estructurales.md" class="md-nav__link">
         Patrones estructurales
       </a>
     </li>
@@ -636,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/comportamiento/" class="md-nav__link">
+      <a href="../../patterns/comportamiento.md" class="md-nav__link">
         Patrones de comportamiento
       </a>
     </li>
@@ -684,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/intro/" class="md-nav__link">
+      <a href="../../solid/intro.md" class="md-nav__link">
         Introduccion
       </a>
     </li>
@@ -698,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/1_srp/" class="md-nav__link">
+      <a href="../../solid/1_srp.md" class="md-nav__link">
         Single Responsibility Principle
       </a>
     </li>
@@ -712,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/2_ocp/" class="md-nav__link">
+      <a href="../../solid/2_ocp.md" class="md-nav__link">
         Single Responsibility Principle
       </a>
     </li>
@@ -726,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/3_lsp/" class="md-nav__link">
+      <a href="../../solid/3_lsp.md" class="md-nav__link">
         Liskov Substitution Principle
       </a>
     </li>
@@ -740,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/4_isp/" class="md-nav__link">
+      <a href="../../solid/4_isp.md" class="md-nav__link">
         Interface Segregation Principle
       </a>
     </li>
@@ -754,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/5_dip/" class="md-nav__link">
+      <a href="../../solid/5_dip.md" class="md-nav__link">
         Dependency Inversion Principle
       </a>
     </li>
@@ -802,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/code_quality/" class="md-nav__link">
+      <a href="../../code_quality/code_quality.md" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -816,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/black/" class="md-nav__link">
+      <a href="../../code_quality/black.md" class="md-nav__link">
         Black
       </a>
     </li>
@@ -830,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/flake8/" class="md-nav__link">
+      <a href="../../code_quality/flake8.md" class="md-nav__link">
         Flake8
       </a>
     </li>
@@ -844,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/mypy/" class="md-nav__link">
+      <a href="../../code_quality/mypy.md" class="md-nav__link">
         Mypy
       </a>
     </li>
@@ -858,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/precommit/" class="md-nav__link">
+      <a href="../../code_quality/precommit.md" class="md-nav__link">
         Pre-commit
       </a>
     </li>
@@ -934,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/mocker/" class="md-nav__link">
+      <a href="../../testing/mocker.md" class="md-nav__link">
         Mocker
       </a>
     </li>
@@ -962,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/plugins/" class="md-nav__link">
+      <a href="../../testing/plugins.md" class="md-nav__link">
         Plugins
       </a>
     </li>
@@ -1024,7 +1022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/commenting/" class="md-nav__link">
+      <a href="../../documentation/commenting.md" class="md-nav__link">
         Comentar vs Documentar
       </a>
     </li>
@@ -1038,7 +1036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/documenting/" class="md-nav__link">
+      <a href="../../documentation/documenting.md" class="md-nav__link">
         Docstrings
       </a>
     </li>
@@ -1052,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/project/" class="md-nav__link">
+      <a href="../../documentation/project.md" class="md-nav__link">
         Documentar en Python
       </a>
     </li>
@@ -1066,7 +1064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/sphinx/" class="md-nav__link">
+      <a href="../../documentation/sphinx.md" class="md-nav__link">
         Sphinx
       </a>
     </li>
@@ -1114,7 +1112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/click/" class="md-nav__link">
+      <a href="../../ecosystem/click.md" class="md-nav__link">
         Click
       </a>
     </li>
@@ -1128,7 +1126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/loguru/" class="md-nav__link">
+      <a href="../../ecosystem/loguru.md" class="md-nav__link">
         Loguru
       </a>
     </li>
@@ -1142,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/loguru/" class="md-nav__link">
+      <a href="../../ecosystem/loguru.md" class="md-nav__link">
         Loguru
       </a>
     </li>
@@ -1156,7 +1154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/plantuml/" class="md-nav__link">
+      <a href="../../ecosystem/plantuml.md" class="md-nav__link">
         Plantuml
       </a>
     </li>
@@ -1170,7 +1168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/diagrams/" class="md-nav__link">
+      <a href="../../ecosystem/diagrams.md" class="md-nav__link">
         Diagrams
       </a>
     </li>
@@ -1211,23 +1209,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalacion" class="md-nav__link">
-    Instalación
+  <a href="#instalacion-de-poetry" class="md-nav__link">
+    Instalación de Poetry
   </a>
   
-    <nav class="md-nav" aria-label="Instalación">
+    <nav class="md-nav" aria-label="Instalación de Poetry">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#osx-linux-bashonwindows" class="md-nav__link">
-    osx / linux / bashonwindows
+  <a href="#macos-linux-bash-en-windows" class="md-nav__link">
+    macOS / Linux / bash en Windows
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#windows-powershell" class="md-nav__link">
-    windows powershell
+    Windows PowerShell
   </a>
   
 </li>
@@ -1238,36 +1236,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#crear-un-proyecto-con-poetry" class="md-nav__link">
-    Crear un proyecto con poetry
+  <a href="#creacion-de-un-proyecto-con-poetry" class="md-nav__link">
+    Creación de un Proyecto con Poetry
   </a>
   
-    <nav class="md-nav" aria-label="Crear un proyecto con poetry">
+    <nav class="md-nav" aria-label="Creación de un Proyecto con Poetry">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#una-configuracion-para-manejar-todo" class="md-nav__link">
-    Una configuración para manejar todo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#poetry-cli" class="md-nav__link">
-    Poetry CLI
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instalacion-y-gestion-de-dependencias" class="md-nav__link">
-    Instalación y gestión de dependencias
+  <a href="#configuracion-centralizada" class="md-nav__link">
+    Configuración Centralizada
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-la-cli-de-poetry" class="md-nav__link">
+    Uso de la CLI de Poetry
+  </a>
   
 </li>
       
@@ -1279,148 +1270,106 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
-<h1 id="poetry">Poetry</h1>
-<p><a href="https://python-poetry.org/">Poetry</a> es una herramienta para la gestión de dependencias y el empaquetado en Python. Le permite declarar las bibliotecas de las que depende su proyecto y las administrará (instalará / actualizará) por usted.</p>
-<h2 id="instalacion">Instalación</h2>
-<p>Poetry proporciona un instalador personalizado que instalará poetry aislado del resto de su sistema al vender sus dependencias. Esta es la forma recomendada de instalar poesía.</p>
-<h3 id="osx-linux-bashonwindows">osx / linux / bashonwindows</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+<h1 id="poetry-gestion-de-dependencias">Poetry: Gestión de Dependencias</h1>
+<p><a href="https://python-poetry.org/">Poetry</a> es una herramienta revolucionaria para la gestión de dependencias y el empaquetado en Python. Con Poetry, declarar las bibliotecas en las que tu proyecto depende es sencillo, y Poetry se encargará de administrar la instalación y actualización de esas dependencias por ti.</p>
+<h2 id="instalacion-de-poetry">Instalación de Poetry</h2>
+<p>Para instalar Poetry de forma aislada y segura en tu sistema, sigue estos pasos:</p>
+<h3 id="macos-linux-bash-en-windows">macOS / Linux / bash en Windows</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span>-sSL<span class="w"> </span>https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py<span class="w"> </span><span class="p">|</span><span class="w"> </span>python<span class="w"> </span>-
 </code></pre></div>
-<h3 id="windows-powershell">windows powershell</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>(Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python -
+<h3 id="windows-powershell">Windows PowerShell</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">(</span>Invoke-WebRequest<span class="w"> </span>-Uri<span class="w"> </span>https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py<span class="w"> </span>-UseBasicParsing<span class="o">)</span>.Content<span class="w"> </span><span class="p">|</span><span class="w"> </span>python<span class="w"> </span>-
 </code></pre></div>
-<h2 id="crear-un-proyecto-con-poetry">Crear un proyecto con poetry</h2>
-<p>Poetry agiliza no solo la gestión de dependencias, sino casi todo lo que implica la estructuración de un proyecto Python. Poetry tiene una CLI robusta, que nos permite crear y configurar proyectos Python fácilmente. Así es como se ve empezar de cero:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>poetry new poetry-tutorial-project
+<h2 id="creacion-de-un-proyecto-con-poetry">Creación de un Proyecto con Poetry</h2>
+<p>Poetry no solo facilita la gestión de dependencias, sino que también agiliza la estructuración de proyectos Python. Puedes crear un nuevo proyecto desde cero de la siguiente manera:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>poetry<span class="w"> </span>new<span class="w"> </span>poetry-tutorial-project
 </code></pre></div>
-<p>Esta es una forma absurdamente conveniente de generar una estructura de carpetas estándar de Python para nuestro nuevo proyecto llamado <code>poetry-tutorial-project</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/poetry-tutorial-project
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├── README.md
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├── poetry_tutorial_project
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>│   └── __init__.py
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>├── pyproject.toml
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>└── tests
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    ├── __init__.py
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    └── test_poetry_tutorial_project.py
+<p>Esta simple línea de comandos generará una estructura de carpetas estándar para tu proyecto, incluyendo un archivo <code>pyproject.toml</code>, que es fundamental en la configuración de tu proyecto.</p>
+<h3 id="configuracion-centralizada">Configuración Centralizada</h3>
+<p>El archivo <code>pyproject.toml</code> es el núcleo de la configuración de tu proyecto con Poetry. Puedes definir metadatos, dependencias, scripts y más en este archivo. A continuación, mostramos un ejemplo completo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">[tool.poetry]</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;poetry_tutorial_project&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;0.1.0&quot;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Simple Python project built with Poetry.&quot;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Todd Birchard &lt;toddbirchard@gmail.com&gt;&quot;</span><span class="p">]</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">maintainers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Todd Birchard &lt;toddbirchard@gmail.com&gt;&quot;</span><span class="p">]</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">license</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;MIT&quot;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;README.md&quot;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">homepage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="n">repository</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/hackersandslackers/python-poetry-tutorial/&quot;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="n">documentation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://hackersandslackers.com/python-poetry/&quot;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="n">keywords</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Poetry&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Virtual Environments&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Tutorial&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Packages&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Packaging&quot;</span><span class="p">]</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="k">[tool.poetry.dependencies]</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="n">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^3.7&quot;</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="n">loguru</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="n">psutil</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="k">[tool.poetry.dev-dependencies]</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="n">pytest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="k">[build-system]</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;poetry&gt;=0.12&quot;</span><span class="p">]</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="n">build-backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;poetry.masonry.api&quot;</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="k">[tool.poetry.scripts]</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="n">run</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;wsgi:main&quot;</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="k">[tool.poetry.urls]</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="n">issues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/hackersandslackers/python-poetry-tutorial/issues&quot;</span>
 </code></pre></div>
-<p>Esto nos ahorra la molestia de crear manualmente esta estructura de carpetas estándar nosotros mismos. La mayor parte del contenido del archivo está vacío, con una excepción: <code>pyproject.toml</code>.</p>
-<h3 id="una-configuracion-para-manejar-todo">Una configuración para manejar todo</h3>
-<p>Cada proyecto de Poetry está contenida en un archivo llamado <code>pyproject.toml</code>. Aquí es donde definimos todo, desde los metadatos, las dependencias, los scripts y más de nuestro proyecto. Si está familiarizado con Node, piense en pyproject.toml como el equivalente en Python de package.json.</p>
-<p>Comenzar un nuevo proyecto de poesía crea automáticamente una versión mínima de este archivo. </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">[tool.poetry]</span><span class="w"></span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;poetry-tutorial-project&quot;</span><span class="w"></span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;0.1.0&quot;</span><span class="w"></span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"></span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Todd Birchard &lt;todd@example.com&gt;&quot;</span><span class="p">]</span><span class="w"></span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="k">[tool.poetry.dependencies]</span><span class="w"></span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^3.7&quot;</span><span class="w"></span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="k">[tool.poetry.dev-dependencies]</span><span class="w"></span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">pytest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^4.6&quot;</span><span class="w"></span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="k">[build-system]</span><span class="w"></span>
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;poetry&gt;=0.12&quot;</span><span class="p">]</span><span class="w"></span>
-<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="n">build-backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;poetry.masonry.api&quot;</span><span class="w"></span>
-</code></pre></div>
-<p>La configuración anterior tiene información básica, pero aún no es suficiente para ser útil. Un archivo <code>pyproject.toml</code> completo se vería así:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">[tool.poetry]</span><span class="w"></span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;poetry_tutorial_project&quot;</span><span class="w"></span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;0.1.0&quot;</span><span class="w"></span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Simple Python project built with Poetry.&quot;</span><span class="w"></span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Todd Birchard &lt;toddbirchard@gmail.com&gt;&quot;</span><span class="p">]</span><span class="w"></span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">maintainers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Todd Birchard &lt;toddbirchard@gmail.com&gt;&quot;</span><span class="p">]</span><span class="w"></span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">license</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;MIT&quot;</span><span class="w"></span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;README.md&quot;</span><span class="w"></span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="n">homepage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"></span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">repository</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/hackersandslackers/python-poetry-tutorial/&quot;</span><span class="w"></span>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="n">documentation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://hackersandslackers.com/python-poetry/&quot;</span><span class="w"></span>
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="n">keywords</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Poetry&quot;</span><span class="p">,</span><span class="w"></span>
-<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">            </span><span class="s">&quot;Virtual Environments&quot;</span><span class="p">,</span><span class="w"></span>
-<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">            </span><span class="s">&quot;Tutorial&quot;</span><span class="p">,</span><span class="w"></span>
-<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">            </span><span class="s">&quot;Packages&quot;</span><span class="p">,</span><span class="w"></span>
-<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">            </span><span class="s">&quot;Packaging&quot;</span><span class="p">]</span><span class="w"></span>
-<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>
-<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="k">[tool.poetry.dependencies]</span><span class="w"></span>
-<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="n">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^3.7&quot;</span><span class="w"></span>
-<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="n">loguru</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span><span class="w"></span>
-<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="n">psutil</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span><span class="w"></span>
-<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
-<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="k">[tool.poetry.dev-dependencies]</span><span class="w"></span>
-<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="n">pytest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;*&quot;</span><span class="w"></span>
-<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>
-<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="k">[build-system]</span><span class="w"></span>
-<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;poetry&gt;=0.12&quot;</span><span class="p">]</span><span class="w"></span>
-<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="n">build-backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;poetry.masonry.api&quot;</span><span class="w"></span>
-<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>
-<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="k">[tool.poetry.scripts]</span><span class="w"></span>
-<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="n">run</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;wsgi:main&quot;</span><span class="w"></span>
-<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>
-<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="k">[tool.poetry.urls]</span><span class="w"></span>
-<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="n">issues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/hackersandslackers/python-poetry-tutorial/issues&quot;</span><span class="w"></span>
-</code></pre></div>
-<p>Ahora estamos cocinando con gas! Nuestro archivo .toml ahora se compone de 6 secciones, donde cada sección contiene valores de configuración para nuestro proyecto:</p>
+<p>Esta configuración incluye metadatos, dependencias, scripts y enlaces útiles para tu proyecto.</p>
+<p><strong>Referencia:</strong> <a href="https://python-poetry.org/docs/pyproject/">Documentación oficial de Poetry - pyproject.toml</a></p>
+<h2 id="uso-de-la-cli-de-poetry">Uso de la CLI de Poetry</h2>
+<p>La interfaz de línea de comandos (CLI) de Poetry simplifica la gestión de dependencias y la administración de proyectos. Aquí tienes algunas tareas comunes:</p>
 <ul>
 <li>
-<p><strong>[tool.poetry]</strong>: La primera sección de pyproject.toml es simplemente metadatos informativos sobre nuestro paquete, como el nombre del paquete, la descripción, los detalles del autor, etc. La mayoría de los valores de configuración aquí son opcionales a menos que esté planeando publicar esto proyecto como paquete oficial de PyPi. Proporcionar valores para el repositorio y las palabras clave no importará si no distribuye este paquete. Aún así, este tipo de metadatos sería fundamental si alguna vez espera distribuir su paquete.</p>
+<p><strong><code>poetry shell</code></strong>: Crea y activa un entorno virtual para tu proyecto. Esto aísla las dependencias de tu proyecto del sistema y otros proyectos.</p>
 </li>
 <li>
-<p><strong>[tool.poetry.dependencies]</strong>: Aquí es donde definimos las dependencias que nuestra aplicación debe descargar para ejecutarse. Puede especificar números de versión específicos para los paquetes requeridos (como <code>Flask = "1.0.0"</code>), o si simplemente desea obtener la última versión, configurar la versión en "*" hará precisamente eso. También notará que la versión de Python a la que nos dirigimos para nuestro proyecto también se proporciona aquí: esto especifica la versión mínima requerida para ejecutar nuestra aplicación. En el ejemplo anterior, un usuario que ejecute Python 3.6 no podrá ejecutar esta aplicación, ya que especificamos que Python 3.7 es la versión más baja requerida.</p>
+<p><strong><code>poetry install</code></strong>: Instala las dependencias especificadas en el archivo <code>pyproject.toml</code>. Las versiones reales se registran en el archivo <code>poetry.lock</code>.</p>
 </li>
 <li>
-<p><strong>[tool.poetry.dev-dependencies]</strong>: las dependencias de desarrollo son paquetes que los desarrolladores que contribuyen deben descargar para iterar en este proyecto. Las dependencias de desarrollo no son necesarias para ejecutar la aplicación y no se descargarán cuando la aplicación se compile de forma predeterminada.</p>
+<p><strong><code>poetry update</code></strong>: Actualiza las dependencias de acuerdo con las versiones especificadas en <code>pyproject.toml</code>. El archivo <code>poetry.lock</code> se actualiza.</p>
 </li>
 <li>
-<p><strong>[build-system]</strong>: Rara vez es una sección que necesitarás tocar a menos que actualices tu versión de poetry.</p>
+<p><strong><code>poetry add [nombre-del-paquete]</code></strong>: Agrega una nueva dependencia a tu proyecto y la instala automáticamente.</p>
 </li>
 <li>
-<p><strong>[tool.poetry.scripts]</strong>: Aquí es donde especificamos dónde están los puntos de entrada de nuestra aplicación asignando una función dentro de los módulos al nombre de un script que se ejecutará. El ejemplo <code>run = "wsgi: main"</code> especifica que queremos crear un comando llamado "run", que buscará en <strong>wsgi.py</strong> una función llamada <strong>main()</strong>. Con este conjunto, podemos lanzar nuestra aplicación a través de la poetry CLI escribiendo <code>poetry run</code> (más sobre esto en un momento).</p>
+<p><strong><code>poetry remove [nombre-del-paquete]</code></strong>: Elimina una dependencia de tu proyecto.</p>
 </li>
 <li>
-<p><strong>[tool.poetry.urls]</strong>: Esta es una sección completamente opcional donde puede agregar cualquier número de enlaces o recursos útiles que alguien que descargue este paquete pueda encontrar útil.</p>
+<p><strong><code>poetry export -f requirements.txt &gt; requirements.txt</code></strong>: Exporta las dependencias y versiones de tu proyecto en formato <code>requirements.txt</code> para casos de uso específicos.</p>
 </li>
 </ul>
-<p>Una configuración como la anterior es más que suficiente para tener una aplicación empaquetada limpia y funcional. Poetry también admite otros tipos de valores de configuración, aunque es probable que rara vez los necesite. </p>
-<h3 id="poetry-cli">Poetry CLI</h3>
-<p>La interfaz de línea de comandos de Poetry es impresionantemente simplista para el alcance de lo que logra. Poetry cubre la funcionalidad equivalente de <strong>Pipenv</strong> y <strong>setup.py</strong>, así como muchas otras características relacionadas con la administración de la configuración y la publicación de paquetes. Comenzaremos instalando y administrando las dependencias que acabamos de configurar en <code>pyproject.toml</code>.</p>
-<h3 id="instalacion-y-gestion-de-dependencias">Instalación y gestión de dependencias</h3>
-<ul>
-<li>
-<p><strong><code>poetry shell</code></strong>: la primera vez que se ejecuta este comando en el directorio de su proyecto, Poetry crea un entorno virtual de Python que estará asociado para siempre con este proyecto. En lugar de crear una carpeta que contenga sus bibliotecas de dependencia (como hace virtualenv), Poetry crea un entorno en una ruta de sistema global, por lo tanto, separa el código fuente de dependencia de su proyecto. Una vez que se crea este entorno virtual, se puede activar de nuevo en cualquier momento simplemente ejecutando poetry shell en el directorio de su proyecto en el futuro. Intente comparar la salida que python antes y después de activar el shell de su proyecto para ver cómo Poetry maneja los entornos virtuales.</p>
-</li>
-<li>
-<p><strong><code>poetry install</code></strong>: instala las dependencias especificadas en <code>pyproject.toml</code>. La primera vez que se instalan las dependencias de un proyecto, se crea un archivo <code>poetry.lock</code>, que contiene los números de versión reales de cada paquete que se instaló (es decir, si <code>Flask = "*"</code> resultó en la descarga de <code>Flask versión 1.0.0</code>, el número de versión real se almacenaría en <code>poetry.lock</code>). Si hay un archivo <code>poetry.lock</code>, los números de versión en <code>poetry.lock</code> siempre tendrán prioridad sobre lo que está en <code>pyproject.toml</code>. Cómo buena práctica, se debe mantener tanto <code>pyproject.toml</code> como <code>poetry.lock</code> en tu control de versión</p>
-</li>
-<li>
-<p><strong><code>poetry update</code></strong>: imita la funcionalidad de <code>install</code>, con la excepción de que los números de versión en .lock NO se respetarán. Si existen versiones más nuevas para los paquetes en pyproject.toml, se instalarán versiones más nuevas y .lock se actualizará en consecuencia.</p>
-</li>
-<li>
-<p><strong><code>poetry add [package-name]</code></strong>: Un atajo para agregar una dependencia a pyproject.toml. El paquete se instala inmediatamente después de agregarlo.</p>
-</li>
-<li>
-<p><strong><code>poetry remove [package-name]</code></strong>: Lo contrario de lo anterior.</p>
-</li>
-<li>
-<p><strong><code>poetry export -f requirements.txt&gt; requirements.txt</code></strong>: exporta el contenido del archivo .lock de su proyecto a requirements.txt. Resulta útil cuando se entrega el trabajo a los desarrolladores que todavía usan requirements.txt por alguna razón.</p>
-</li>
-</ul>
+<p>Poetry simplifica significativamente la gestión de dependencias y la administración de proyectos Python, lo que permite una experiencia de desarrollo más eficiente y organizada.</p>
+<p><strong>Referencia:</strong> <a href="https://python-poetry.org/docs/cli/">Documentación oficial de Poetry - Comandos</a></p>
+<p>En resumen, Poetry es una herramienta imprescindible para el desarrollo de proyectos Python. Facilita la gestión de dependencias, la organización de proyectos y el empaquetado, simplificando muchas tareas comunes. ¡Explora más sobre Poetry y úsalo para mejorar tu flujo de trabajo de desarrollo en Python!</p>
 
-              
-            </article>
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Pie">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pie" >
       
         
         <a href="../virtualenv/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Venv" rel="prev">
@@ -1439,7 +1388,7 @@
       
       
         
-        <a href="../../oop/oop/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Introducción" rel="next">
+        <a href="../../testing/intro/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Introducción" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -1475,10 +1424,11 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
@@ -1486,6 +1436,7 @@
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
+    
     
   </body>
 </html>

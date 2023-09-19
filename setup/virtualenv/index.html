@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://github.com/fralfaro/python_sdk/setup/virtualenv/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
     
     
       
@@ -21,12 +21,14 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
         
       
+      
+
     
     
     
@@ -41,10 +43,11 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -69,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#venv" class="md-skip">
+        <a href="#ambientes-virtuales-venv" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -113,6 +116,7 @@
         
           
           
+          
           <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
@@ -120,6 +124,7 @@
             </label>
           
         
+          
           
           
           <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
@@ -147,7 +152,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -171,7 +176,7 @@
         <a href="https://github.com/fralfaro/python_sdk" title="Ir al repositorio" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     fralfaro/python_sdk
@@ -216,7 +221,7 @@
       <a href="https://github.com/fralfaro/python_sdk" title="Ir al repositorio" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     fralfaro/python_sdk
@@ -329,58 +334,32 @@
     Introducción
   </a>
   
-    <nav class="md-nav" aria-label="Introducción">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#para-que-se-usan-los-entornos-virtuales" class="md-nav__link">
-    ¿Para qué se usan los entornos virtuales?
-  </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#los-entornos-virtuales-son-propios-solo-del-lenguaje-python" class="md-nav__link">
-    ¿Los entornos virtuales son propios sólo del lenguaje python?
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-ambiente-virtual-y-por-que-son-importantes" class="md-nav__link">
+    ¿Qué es un Ambiente Virtual y por qué son Importantes?
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#que-programa-necesito-para-crear-un-entorno-virtual-con-python-3" class="md-nav__link">
-    ¿Qué programa necesito para crear un entorno virtual con python 3?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creando-ambientes-virtuales" class="md-nav__link">
-    Creando ambientes virtuales
+  <a href="#creacion-de-un-ambiente-virtual-con-venv" class="md-nav__link">
+    Creación de un Ambiente Virtual con Venv
   </a>
-  
-    <nav class="md-nav" aria-label="Creando ambientes virtuales">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#forma-tradicional" class="md-nav__link">
-    Forma tradicional
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#referencias" class="md-nav__link">
-    Referencias
+  <a href="#trabajando-en-un-ambiente-virtual" class="md-nav__link">
+    Trabajando en un Ambiente Virtual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beneficios-de-los-ambientes-virtuales" class="md-nav__link">
+    Beneficios de los Ambientes Virtuales
   </a>
   
 </li>
@@ -448,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop/" class="md-nav__link">
+      <a href="../../oop/oop.md" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -462,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_conceptos_basicos/" class="md-nav__link">
+      <a href="../../oop/oop_conceptos_basicos.md" class="md-nav__link">
         Conceptos Básicos
       </a>
     </li>
@@ -476,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_herencia/" class="md-nav__link">
+      <a href="../../oop/oop_herencia.md" class="md-nav__link">
         Herencia
       </a>
     </li>
@@ -490,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_cohesion/" class="md-nav__link">
+      <a href="../../oop/oop_cohesion.md" class="md-nav__link">
         Cohesion
       </a>
     </li>
@@ -504,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_abstraccion/" class="md-nav__link">
+      <a href="../../oop/oop_abstraccion.md" class="md-nav__link">
         Abstraccion
       </a>
     </li>
@@ -518,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_polimorfismo/" class="md-nav__link">
+      <a href="../../oop/oop_polimorfismo.md" class="md-nav__link">
         Polimorfismo
       </a>
     </li>
@@ -532,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_acoplamiento/" class="md-nav__link">
+      <a href="../../oop/oop_acoplamiento.md" class="md-nav__link">
         Acoplamiento
       </a>
     </li>
@@ -546,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_encapsulamiento/" class="md-nav__link">
+      <a href="../../oop/oop_encapsulamiento.md" class="md-nav__link">
         Encapsulamiento
       </a>
     </li>
@@ -594,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/intro/" class="md-nav__link">
+      <a href="../../patterns/intro.md" class="md-nav__link">
         Introduccion
       </a>
     </li>
@@ -608,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/creacionales/" class="md-nav__link">
+      <a href="../../patterns/creacionales.md" class="md-nav__link">
         Patrones de creación
       </a>
     </li>
@@ -622,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/estructurales/" class="md-nav__link">
+      <a href="../../patterns/estructurales.md" class="md-nav__link">
         Patrones estructurales
       </a>
     </li>
@@ -636,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/comportamiento/" class="md-nav__link">
+      <a href="../../patterns/comportamiento.md" class="md-nav__link">
         Patrones de comportamiento
       </a>
     </li>
@@ -684,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/intro/" class="md-nav__link">
+      <a href="../../solid/intro.md" class="md-nav__link">
         Introduccion
       </a>
     </li>
@@ -698,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/1_srp/" class="md-nav__link">
+      <a href="../../solid/1_srp.md" class="md-nav__link">
         Single Responsibility Principle
       </a>
     </li>
@@ -712,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/2_ocp/" class="md-nav__link">
+      <a href="../../solid/2_ocp.md" class="md-nav__link">
         Single Responsibility Principle
       </a>
     </li>
@@ -726,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/3_lsp/" class="md-nav__link">
+      <a href="../../solid/3_lsp.md" class="md-nav__link">
         Liskov Substitution Principle
       </a>
     </li>
@@ -740,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/4_isp/" class="md-nav__link">
+      <a href="../../solid/4_isp.md" class="md-nav__link">
         Interface Segregation Principle
       </a>
     </li>
@@ -754,7 +733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/5_dip/" class="md-nav__link">
+      <a href="../../solid/5_dip.md" class="md-nav__link">
         Dependency Inversion Principle
       </a>
     </li>
@@ -802,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/code_quality/" class="md-nav__link">
+      <a href="../../code_quality/code_quality.md" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -816,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/black/" class="md-nav__link">
+      <a href="../../code_quality/black.md" class="md-nav__link">
         Black
       </a>
     </li>
@@ -830,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/flake8/" class="md-nav__link">
+      <a href="../../code_quality/flake8.md" class="md-nav__link">
         Flake8
       </a>
     </li>
@@ -844,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/mypy/" class="md-nav__link">
+      <a href="../../code_quality/mypy.md" class="md-nav__link">
         Mypy
       </a>
     </li>
@@ -858,7 +837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/precommit/" class="md-nav__link">
+      <a href="../../code_quality/precommit.md" class="md-nav__link">
         Pre-commit
       </a>
     </li>
@@ -934,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/mocker/" class="md-nav__link">
+      <a href="../../testing/mocker.md" class="md-nav__link">
         Mocker
       </a>
     </li>
@@ -962,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/plugins/" class="md-nav__link">
+      <a href="../../testing/plugins.md" class="md-nav__link">
         Plugins
       </a>
     </li>
@@ -1024,7 +1003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/commenting/" class="md-nav__link">
+      <a href="../../documentation/commenting.md" class="md-nav__link">
         Comentar vs Documentar
       </a>
     </li>
@@ -1038,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/documenting/" class="md-nav__link">
+      <a href="../../documentation/documenting.md" class="md-nav__link">
         Docstrings
       </a>
     </li>
@@ -1052,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/project/" class="md-nav__link">
+      <a href="../../documentation/project.md" class="md-nav__link">
         Documentar en Python
       </a>
     </li>
@@ -1066,7 +1045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/sphinx/" class="md-nav__link">
+      <a href="../../documentation/sphinx.md" class="md-nav__link">
         Sphinx
       </a>
     </li>
@@ -1114,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/click/" class="md-nav__link">
+      <a href="../../ecosystem/click.md" class="md-nav__link">
         Click
       </a>
     </li>
@@ -1128,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/loguru/" class="md-nav__link">
+      <a href="../../ecosystem/loguru.md" class="md-nav__link">
         Loguru
       </a>
     </li>
@@ -1142,7 +1121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/loguru/" class="md-nav__link">
+      <a href="../../ecosystem/loguru.md" class="md-nav__link">
         Loguru
       </a>
     </li>
@@ -1156,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/plantuml/" class="md-nav__link">
+      <a href="../../ecosystem/plantuml.md" class="md-nav__link">
         Plantuml
       </a>
     </li>
@@ -1170,7 +1149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/diagrams/" class="md-nav__link">
+      <a href="../../ecosystem/diagrams.md" class="md-nav__link">
         Diagrams
       </a>
     </li>
@@ -1215,58 +1194,32 @@
     Introducción
   </a>
   
-    <nav class="md-nav" aria-label="Introducción">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#para-que-se-usan-los-entornos-virtuales" class="md-nav__link">
-    ¿Para qué se usan los entornos virtuales?
-  </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#los-entornos-virtuales-son-propios-solo-del-lenguaje-python" class="md-nav__link">
-    ¿Los entornos virtuales son propios sólo del lenguaje python?
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-ambiente-virtual-y-por-que-son-importantes" class="md-nav__link">
+    ¿Qué es un Ambiente Virtual y por qué son Importantes?
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#que-programa-necesito-para-crear-un-entorno-virtual-con-python-3" class="md-nav__link">
-    ¿Qué programa necesito para crear un entorno virtual con python 3?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creando-ambientes-virtuales" class="md-nav__link">
-    Creando ambientes virtuales
+  <a href="#creacion-de-un-ambiente-virtual-con-venv" class="md-nav__link">
+    Creación de un Ambiente Virtual con Venv
   </a>
-  
-    <nav class="md-nav" aria-label="Creando ambientes virtuales">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#forma-tradicional" class="md-nav__link">
-    Forma tradicional
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#referencias" class="md-nav__link">
-    Referencias
+  <a href="#trabajando-en-un-ambiente-virtual" class="md-nav__link">
+    Trabajando en un Ambiente Virtual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beneficios-de-los-ambientes-virtuales" class="md-nav__link">
+    Beneficios de los Ambientes Virtuales
   </a>
   
 </li>
@@ -1279,106 +1232,97 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
-<h1 id="venv">Venv</h1>
+<h1 id="ambientes-virtuales-venv">Ambientes Virtuales (Venv)</h1>
 <h2 id="introduccion">Introducción</h2>
-<p>Un entorno de desarrollo virtual python o simplemente entorno virtual python es un mecanismo que me permite gestionar programas y paquetes python sin tener permisos de administración, es decir, cualquier usuario sin privilegios puede tener uno o más <strong>espacios aislados</strong> (ya veremos más adelante que los entornos virtuales se guardan en directorios) donde poder instalar distintas versiones de programas y paquetes python.</p>
-<p>Antes de empezar a crear nuestros entornos, deberíamos hacernos las siguientes preguntas:</p>
-<h3 id="para-que-se-usan-los-entornos-virtuales">¿Para qué se usan los entornos virtuales?</h3>
-<ul>
+<p>El desarrollo de software en Python a menudo implica trabajar en una variedad de proyectos, cada uno con sus propias dependencias y versiones de bibliotecas. Para mantener un entorno de desarrollo limpio, organizado y aislado, Python ofrece <strong>ambientes virtuales</strong>, y uno de los enfoques más comunes es utilizar la herramienta <strong>Venv</strong>. En este documento, exploraremos la importancia de los ambientes virtuales, cómo trabajar con ellos de manera efectiva, y proporcionaremos enlaces a recursos adicionales para un aprendizaje más profundo.</p>
+<h2 id="que-es-un-ambiente-virtual-y-por-que-son-importantes">¿Qué es un Ambiente Virtual y por qué son Importantes?</h2>
+<p>Un ambiente virtual es un espacio aislado en el que puedes instalar bibliotecas, paquetes y versiones específicas de Python para un proyecto en particular. Esto evita conflictos entre diferentes proyectos que requieren versiones diferentes de las mismas bibliotecas y garantiza que cada proyecto tenga su propio entorno limpio y funcional.</p>
+<p><strong>Referencia:</strong> <a href="https://docs.python.org/3/library/venv.html">Documentación oficial de Venv</a></p>
+<h2 id="creacion-de-un-ambiente-virtual-con-venv">Creación de un Ambiente Virtual con Venv</h2>
+<p>La herramienta <code>venv</code> es una biblioteca estándar de Python que te permite crear ambientes virtuales fácilmente. Aquí hay un ejemplo sencillo de cómo crear y activar un ambiente virtual utilizando Venv:</p>
+<ol>
+<li><strong>Crear un Directorio para tu Proyecto</strong>: Abre una terminal y crea un directorio para tu proyecto (si aún no lo has hecho).</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>mi_proyecto
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>mi_proyecto
+</code></pre></div>
+<ol>
+<li><strong>Crear el Ambiente Virtual</strong>: Ejecuta el siguiente comando para crear un ambiente virtual llamado <code>mi_entorno</code>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>mi_entorno
+</code></pre></div>
+<ol>
 <li>
-<p>Utilizar versiones de paquetes python que no son las que vienen empaquetadas oficialmente en nuestra OS. Una solución puede ser usar <code>pip</code> como administrador: esta solución nos puede dar muchos problemas, ya que podemos romper las dependencias entre las versiones de nuestros paquetes python instalados en el sistema y algún paquete puede dejar de funcionar.</p>
+<p><strong>Activar el Ambiente Virtual</strong>: Dependiendo de tu sistema operativo, activa el ambiente virtual con uno de los siguientes comandos:</p>
 </li>
 <li>
-<p>En el caso del desarrollo y despliegue de aplicaciones web, cada vez es más importante acercar los entornos de desarrollo, prueba y producción, es decir, que estos tres entornos sean los más parecidos posible, para no tener <strong>sorpresas</strong> a la hora de desplegar la aplicación en producción. </p>
+<p>En Linux/macOS:</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">source</span><span class="w"> </span>mi_entorno/bin/activate
+</code></pre></div>
+<ul>
+<li>En Windows:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mi_entorno<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</code></pre></div>
+<p>Ahora, tu terminal debería mostrar el nombre del ambiente virtual activo en el indicador de comando, lo que indica que estás trabajando dentro de ese ambiente aislado.</p>
+<h2 id="trabajando-en-un-ambiente-virtual">Trabajando en un Ambiente Virtual</h2>
+<p>Dentro de un ambiente virtual, puedes instalar bibliotecas y paquetes específicos utilizando <code>pip</code>, sin afectar al Python del sistema ni a otros ambientes virtuales. Aquí hay un ejemplo:</p>
+<ol>
+<li><strong>Instalar una Biblioteca</strong>: Supongamos que deseas instalar la biblioteca <code>requests</code> en tu ambiente virtual. Simplemente ejecuta:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>requests
+</code></pre></div>
+<ol>
+<li><strong>Verificar las Bibliotecas Instaladas</strong>: Puedes ver las bibliotecas instaladas en tu ambiente virtual con:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip<span class="w"> </span>list
+</code></pre></div>
+<ol>
+<li><strong>Desactivar el Ambiente Virtual</strong>: Cuando hayas terminado de trabajar en tu proyecto, puedes desactivar el ambiente virtual con:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>deactivate
+</code></pre></div>
+<h2 id="beneficios-de-los-ambientes-virtuales">Beneficios de los Ambientes Virtuales</h2>
+<ul>
+<li>
+<p><strong>Aislamiento</strong>: Los ambientes virtuales evitan conflictos entre proyectos al mantener las dependencias separadas.</p>
 </li>
 <li>
-<p>Los ciclos de desarrollo de aplicaciones son cada vez más rápidos, esto puede suponer que en una misma máquina podamos tener aplicaciones que utilicen diferentes dependencias y versiones de un mismo paquete. Por ejemplo, podemos tener dos aplicaciones web en producción, una que esté desarrollada con django 1.8 y otra con django 1.10. </p>
+<p><strong>Organización</strong>: Facilitan la organización de tus proyectos y la gestión de las versiones de las bibliotecas.</p>
 </li>
 <li>
-<p>Los entornos virtuales son una herramienta que favorecen las nuevas metodologías de trabajo que se denominan DevOps, que tratan de gestionar y automatizar la configuración. Es muy sencillo distribuir la configuración de nuetro en torno virtual y automatizar la creación de ellos en diferentes infraestructuras y escenarios.</p>
+<p><strong>Reproducibilidad</strong>: Garantizan que otros desarrolladores puedan reproducir tu entorno de desarrollo.</p>
 </li>
 </ul>
-<h3 id="los-entornos-virtuales-son-propios-solo-del-lenguaje-python">¿Los entornos virtuales son propios sólo del lenguaje python?</h3>
-<p>No, existen herramientas parecidas en distintos lenguajes que nos ofrecen una funcionalidad parecida:</p>
-<ul>
-<li><code>phpenv</code> para <code>php</code></li>
-<li><code>plen</code> y <code>perlbrew</code> para <code>perl</code></li>
-<li><code>rbenv</code> y RVM para ruby</li>
-<li><code>nodeenv</code>, <code>nvm</code>, <code>n</code> y <code>nave</code> para <code>node.js</code></li>
-</ul>
-<h3 id="que-programa-necesito-para-crear-un-entorno-virtual-con-python-3">¿Qué programa necesito para crear un entorno virtual con python 3?</h3>
-<p>Tradicionalmente se utiliza la herramienta <code>virtualenv</code> para 
-crear nuestros entornos virtuales. Sin embargo, desde 
-la versión 3.3 de Python tenemos a nuestra disposición un
-módulo del sistema <code>venv</code> que podemos utilizar para crear 
-nuestro entorno virtual. Por otro lado, existen otras formas de
-crear ambientes virtuales, por ejemplo ocupando <code>conda</code>, <code>pipenv</code>
-y/o <code>poetry</code>, sin emabargo, estos pueden ser un poco más complejo 
-de comeprender en un comienzo (sobre todo <code>pipenv</code> o <code>poetry</code> ), 
-aunque con costo/benefificio de poder tener un gestor de
-paquetes mejor que un simple <code>requirements.txt</code>.</p>
-<p>Comprendamos algunos conceptos básicos:</p>
-<ul>
-<li><code>virtualenv</code>: software que se encuentra en el Python Package Index o PyPI , que es el repositorio de paquetes de software oficial para aplicaciones de terceros en el lenguaje de programación Python.</li>
-<li><code>venv</code>: módulo oficial de Python que a partir de la versión 3.3 nos permite crear entornos virtuales.</li>
-<li><code>pip</code> : Independientemente de la manera en que creamos el entorno virtual, utilizando una de las dos herramientas anteriores, vamos a utilizar este sistema de gestión de paquetes utilizado para instalar y administrar paquetes de software escritos en Python que se encuentran alojados en el repositorio PyPI .</li>
-</ul>
-<h2 id="creando-ambientes-virtuales">Creando ambientes virtuales</h2>
-<h3 id="forma-tradicional">Forma tradicional</h3>
-<p>La instalación y configuración se realizará en una distribución GNU/Linux Debian Jessie, en otra versión del sistema u otra distribución puede haber algunas diferencias.</p>
-<p>Instalamos los paquetes necesarios como root:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># apt-get install python-virtualenv
-</code></pre></div>
-<p>Ahora ya como un usuario sin privilegio podemos crear un entorno virtual con el interprete Python (2.7 o 3.X):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$ virtualenv entorno1
-</code></pre></div>
-<p>Se ha creado un directorio, donde se instalarán posteriormente los paquetes que necesitemos:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$ cd entorno1
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>$ ls
-</code></pre></div></p>
-<p>Independientemente el interprete que utilicemos en nuestro entorno para activarlo tenemos que ejecutar la siguiente instrucción:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$ source entorno1/bin/activate$
-</code></pre></div></p>
-<p>Para desactivar el ambiente virtual, ejecutamos:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>$ deactivate
-</code></pre></div>
-<p>Para poder instalar alguna librería, simplemente ocupamos la herramienta de <code>pip</code> (en python 3 se ocupa <code>pip3</code>)</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>$ pip install numpy
-</code></pre></div>
-<p>También podemos instalar alguna versión en específica, simplemente se realiza:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>$ pip install numpy==&quot;1.0.0&quot;
-</code></pre></div>
-<p>Si necesitamos borrar un paquete podemos ejecutar:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>$ pip uninstall numpy
-</code></pre></div>
-<p>Para terminar de repasar la herramienta <code>pip</code> , vamos a explicar como podemos guardar en un fichero (que se suele llamar <code>requirements.txt</code> ) la lista de paquetes instalados, que nos permite de manera sencilla crear otro entorno virtual en otra máquina con los mismos paquetes instalados. Para ello vamos a usar la siguiente opción de <code>pip</code> :</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>$ pip freeze
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>numpy==1.0.0
-</code></pre></div>
-<p>De tal manera que otro usuario, en otro entorno, teniendo este fichero pude reproducirlo e instalar los mismos paquetes de la siguiente manera:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pip install -r requirements.txt
-</code></pre></div>
-<h2 id="referencias">Referencias</h2>
-<ul>
-<li><a href="https://docs.python.org/3/library/venv.html">venv — Creation of virtual environments</a></li>
-</ul>
+<p><strong>Referencia:</strong> <a href="https://realpython.com/python-virtual-environments-a-primer/">Python Virtual Environments: A Primer</a></p>
+<p>En resumen, los ambientes virtuales con Venv son una herramienta esencial en el desarrollo de software en Python. Permiten trabajar de manera ordenada, aislada y eficiente, asegurando que cada proyecto tenga su propio entorno controlado. Esta práctica es especialmente valiosa cuando trabajas en varios proyectos de Python a la vez, lo que te permite mantener la sanidad de tu entorno de desarrollo. ¡Explora más sobre los ambientes virtuales y úsalos para potenciar tu desarrollo de Python!</p>
 
-              
-            </article>
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Pie">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pie" >
       
         
         <a href="../pyenv/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Pyenv" rel="prev">
@@ -1433,10 +1377,11 @@ paquetes mejor que un simple <code>requirements.txt</code>.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
@@ -1444,6 +1389,7 @@ paquetes mejor que un simple <code>requirements.txt</code>.</p>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
+    
     
   </body>
 </html>

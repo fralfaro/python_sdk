@@ -1,0 +1,1599 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Francisco Alfaro">
+      
+      
+        <link rel="canonical" href="https://github.com/fralfaro/python_sdk/git/git/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Git - Home</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#git" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Home" class="md-header__button md-logo" aria-label="Home" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Home
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Git
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fralfaro/python_sdk" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fralfaro/python_sdk
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Home" class="md-nav__button md-logo" aria-label="Home" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Home
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fralfaro/python_sdk" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fralfaro/python_sdk
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Setup
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Setup" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Setup
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/pyenv/" class="md-nav__link">
+        Pyenv
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/virtualenv/" class="md-nav__link">
+        Venv
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/poetry/" class="md-nav__link">
+        Poetry
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          OOP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="OOP" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          OOP
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/oop.md" class="md-nav__link">
+        Introducción
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/oop_conceptos_basicos.md" class="md-nav__link">
+        Conceptos Básicos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/oop_herencia.md" class="md-nav__link">
+        Herencia
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/oop_cohesion.md" class="md-nav__link">
+        Cohesion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/oop_abstraccion.md" class="md-nav__link">
+        Abstraccion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/oop_polimorfismo.md" class="md-nav__link">
+        Polimorfismo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/oop_acoplamiento.md" class="md-nav__link">
+        Acoplamiento
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/oop_encapsulamiento.md" class="md-nav__link">
+        Encapsulamiento
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Design Patterns
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Design Patterns" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Design Patterns
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/intro.md" class="md-nav__link">
+        Introduccion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/creacionales.md" class="md-nav__link">
+        Patrones de creación
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/estructurales.md" class="md-nav__link">
+        Patrones estructurales
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patterns/comportamiento.md" class="md-nav__link">
+        Patrones de comportamiento
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          SOLID
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="SOLID" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          SOLID
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../solid/intro.md" class="md-nav__link">
+        Introduccion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../solid/1_srp.md" class="md-nav__link">
+        Single Responsibility Principle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../solid/2_ocp.md" class="md-nav__link">
+        Single Responsibility Principle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../solid/3_lsp.md" class="md-nav__link">
+        Liskov Substitution Principle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../solid/4_isp.md" class="md-nav__link">
+        Interface Segregation Principle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../solid/5_dip.md" class="md-nav__link">
+        Dependency Inversion Principle
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Code Quality
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Code Quality" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Code Quality
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code_quality/code_quality.md" class="md-nav__link">
+        Introducción
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code_quality/black.md" class="md-nav__link">
+        Black
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code_quality/flake8.md" class="md-nav__link">
+        Flake8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code_quality/mypy.md" class="md-nav__link">
+        Mypy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code_quality/precommit.md" class="md-nav__link">
+        Pre-commit
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Testing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Testing" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Testing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/intro/" class="md-nav__link">
+        Introducción
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/pytest/" class="md-nav__link">
+        Pytest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/mocker.md" class="md-nav__link">
+        Mocker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/hypothesis/" class="md-nav__link">
+        Hypothesis
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/plugins.md" class="md-nav__link">
+        Plugins
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Documentación
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentación" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Documentación
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/intro/" class="md-nav__link">
+        Introducción
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/commenting.md" class="md-nav__link">
+        Comentar vs Documentar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/documenting.md" class="md-nav__link">
+        Docstrings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/project.md" class="md-nav__link">
+        Documentar en Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/sphinx.md" class="md-nav__link">
+        Sphinx
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Ecosistema Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Ecosistema Python" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Ecosistema Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecosystem/click.md" class="md-nav__link">
+        Click
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecosystem/loguru.md" class="md-nav__link">
+        Loguru
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecosystem/loguru.md" class="md-nav__link">
+        Loguru
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecosystem/plantuml.md" class="md-nav__link">
+        Plantuml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecosystem/diagrams.md" class="md-nav__link">
+        Diagrams
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-origenes-de-git" class="md-nav__link">
+    1. Orígenes de Git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-configuracion-de-git" class="md-nav__link">
+    2. Configuración de Git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-comandos-basicos-de-git" class="md-nav__link">
+    3. Comandos Básicos de Git
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Comandos Básicos de Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iniciar-un-repositorio" class="md-nav__link">
+    Iniciar un Repositorio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clonar-un-repositorio" class="md-nav__link">
+    Clonar un Repositorio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#realizar-confirmaciones" class="md-nav__link">
+    Realizar Confirmaciones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ver-el-estado-del-repositorio" class="md-nav__link">
+    Ver el Estado del Repositorio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ver-el-historial-de-confirmaciones" class="md-nav__link">
+    Ver el Historial de Confirmaciones
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ramificacion-y-fusion" class="md-nav__link">
+    4. Ramificación y Fusión
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Ramificación y Fusión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-rama" class="md-nav__link">
+    Crear una Rama
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cambiar-de-rama" class="md-nav__link">
+    Cambiar de Rama
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fusionar-ramas" class="md-nav__link">
+    Fusionar Ramas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-comandos-avanzados-de-git" class="md-nav__link">
+    5. Comandos Avanzados de Git
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Comandos Avanzados de Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rebase" class="md-nav__link">
+    Rebase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stash" class="md-nav__link">
+    Stash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cherry-pick" class="md-nav__link">
+    Cherry-Pick
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submodulos" class="md-nav__link">
+    Submódulos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflog" class="md-nav__link">
+    Reflog
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ramificacion-remota" class="md-nav__link">
+    6. Ramificación Remota
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Ramificación Remota">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enviar-cambios-a-un-repositorio-remoto" class="md-nav__link">
+    Enviar Cambios a un Repositorio Remoto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtener-cambios-de-un-repositorio-remoto" class="md-nav__link">
+    Obtener Cambios de un Repositorio Remoto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-git-en-la-practica" class="md-nav__link">
+    7. Git en la Práctica
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Git en la Práctica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-creacion-de-un-repositorio-y-confirmacion-de-cambios" class="md-nav__link">
+    Ejemplo: Creación de un Repositorio y Confirmación de Cambios
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplo: Creación de un Repositorio y Confirmación de Cambios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-inicializar-un-repositorio" class="md-nav__link">
+    Paso 1: Inicializar un Repositorio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-agregar-y-confirmar-cambios" class="md-nav__link">
+    Paso 2: Agregar y Confirmar Cambios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-ver-el-historial" class="md-nav__link">
+    Paso 3: Ver el Historial
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-trabajo-con-ramas" class="md-nav__link">
+    Ejemplo: Trabajo con Ramas
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplo: Trabajo con Ramas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-crear-una-rama" class="md-nav__link">
+    Paso 1: Crear una Rama
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-cambiar-de-rama" class="md-nav__link">
+    Paso 2: Cambiar de Rama
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-realizar-cambios-y-confirmar" class="md-nav__link">
+    Paso 3: Realizar Cambios y Confirmar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-4-fusionar-la-rama" class="md-nav__link">
+    Paso 4: Fusionar la Rama
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-conclusiones" class="md-nav__link">
+    8. Conclusiones
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="git">Git</h1>
+<p>Git es un sistema de control de versiones ampliamente utilizado que permite rastrear cambios en archivos y colaborar en proyectos de desarrollo de software. En esta guía completa de Git, exploraremos sus orígenes, comandos básicos y avanzados, y proporcionaremos ejemplos detallados para ayudarte a comprender este poderoso sistema de control de versiones.</p>
+<h2 id="1-origenes-de-git">1. Orígenes de Git</h2>
+<p>Git fue creado por Linus Torvalds en 2005, el mismo creador del kernel de Linux. La necesidad de un sistema de control de versiones distribuido y eficiente para administrar el desarrollo del kernel de Linux condujo a la creación de Git. Algunos de los principios clave que impulsaron su desarrollo incluyen:</p>
+<ul>
+<li>
+<p><strong>Distribución</strong>: Git es un sistema de control de versiones distribuido, lo que significa que cada usuario tiene una copia completa del historial del repositorio en su máquina local.</p>
+</li>
+<li>
+<p><strong>Velocidad</strong>: Git se diseñó para ser rápido y eficiente, lo que lo hace adecuado para proyectos de cualquier tamaño.</p>
+</li>
+<li>
+<p><strong>Integridad de los datos</strong>: Los datos almacenados en Git se verifican mediante sumas de comprobación criptográficas, lo que garantiza que los archivos y las revisiones no se dañen ni se modifiquen sin autorización.</p>
+</li>
+<li>
+<p><strong>Soporte para ramificación y fusión</strong>: Git facilita la creación de ramas para experimentar y el proceso de fusión de ramas cuando se completan las características o las correcciones de errores.</p>
+</li>
+<li>
+<p><strong>Flexibilidad</strong>: Git es altamente flexible y admite una variedad de flujos de trabajo de desarrollo.</p>
+</li>
+</ul>
+<h2 id="2-configuracion-de-git">2. Configuración de Git</h2>
+<p>Antes de comenzar a usar Git, es importante configurar su identidad. Esto asegura que las confirmaciones que realice tengan la información correcta del autor. Puede configurar su nombre de usuario y dirección de correo electrónico utilizando los siguientes comandos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Tu Nombre&quot;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;tu@email.com&quot;</span>
+</code></pre></div>
+<h2 id="3-comandos-basicos-de-git">3. Comandos Básicos de Git</h2>
+<h3 id="iniciar-un-repositorio">Iniciar un Repositorio</h3>
+<p>Para comenzar a usar Git en un proyecto existente, o para crear un nuevo repositorio desde cero, puede usar el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>init
+</code></pre></div>
+<h3 id="clonar-un-repositorio">Clonar un Repositorio</h3>
+<p>Para clonar un repositorio existente desde un servidor remoto (como GitHub), use el comando <code>git clone</code>. Esto creará una copia local del repositorio en su máquina:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>clone<span class="w"> </span>URL_del_repositorio
+</code></pre></div>
+<h3 id="realizar-confirmaciones">Realizar Confirmaciones</h3>
+<p>Después de realizar cambios en sus archivos, puede confirmarlos en Git con el siguiente flujo de comandos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>add<span class="w"> </span>archivo_modificado
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Mensaje de confirmación descriptivo&quot;</span>
+</code></pre></div>
+<h3 id="ver-el-estado-del-repositorio">Ver el Estado del Repositorio</h3>
+<p>Para verificar el estado actual de su repositorio y ver qué archivos están en la etapa de preparación y cuáles no, use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>status
+</code></pre></div>
+<h3 id="ver-el-historial-de-confirmaciones">Ver el Historial de Confirmaciones</h3>
+<p>Puede ver el historial de confirmaciones de su repositorio con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>log
+</code></pre></div>
+<h2 id="4-ramificacion-y-fusion">4. Ramificación y Fusión</h2>
+<h3 id="crear-una-rama">Crear una Rama</h3>
+<p>Las ramas en Git permiten trabajar en características o correcciones de errores de forma aislada. Para crear una nueva rama, use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>branch<span class="w"> </span>nombre_de_la_rama
+</code></pre></div>
+<h3 id="cambiar-de-rama">Cambiar de Rama</h3>
+<p>Puede cambiar entre ramas utilizando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>nombre_de_la_rama
+</code></pre></div>
+<h3 id="fusionar-ramas">Fusionar Ramas</h3>
+<p>Para fusionar los cambios de una rama en otra, use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>rama_destino
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>git<span class="w"> </span>merge<span class="w"> </span>rama_fuente
+</code></pre></div>
+<h2 id="5-comandos-avanzados-de-git">5. Comandos Avanzados de Git</h2>
+<h3 id="rebase">Rebase</h3>
+<p>La rebase es una operación que permite reorganizar el historial de confirmaciones para que parezca que las confirmaciones de una rama se hicieron después de las de otra. Esto es útil para mantener un historial limpio y ordenado. Para realizar un rebase, use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>git<span class="w"> </span>rebase<span class="w"> </span>rama_fuente
+</code></pre></div>
+<h3 id="stash">Stash</h3>
+<p>El comando <code>git stash</code> le permite guardar temporalmente cambios sin confirmar en una pila y trabajar en otra rama. Esto es útil cuando necesita cambiar de rama pero no desea confirmar los cambios en curso. Los cambios guardados se pueden aplicar más tarde. Para guardar cambios en una pila, use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>git<span class="w"> </span>stash
+</code></pre></div>
+<h3 id="cherry-pick">Cherry-Pick</h3>
+<p>El cherry-pick le permite aplicar una confirmación específica desde una rama a otra. Esto es útil cuando solo necesita aplicar ciertos cambios de una rama en lugar de fusionar toda la rama. Para realizar un cherry-pick, use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>git<span class="w"> </span>cherry-pick<span class="w"> </span>hash_de_la_confirmación
+</code></pre></div>
+<h3 id="submodulos">Submódulos</h3>
+<p>Los submódulos permiten incluir otros repositorios de Git dentro de su propio repositorio. Esto es útil cuando necesita incluir bibliotecas o dependencias externas en su proyecto. Para agregar un submódulo, use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>git<span class="w"> </span>submodule<span class="w"> </span>add<span class="w"> </span>URL_del_repositorio
+</code></pre></div>
+<h3 id="reflog">Reflog</h3>
+<p>Reflog es una herramienta útil para recuperar confirmaciones "perdidas" o para volver a estados anteriores del repositorio. Le permite ver el historial de referencia de Git. Para ver el reflog, use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>git<span class="w"> </span>reflog
+</code></pre></div>
+<h2 id="6-ramificacion-remota">6. Ramificación Remota</h2>
+<h3 id="_1"></h3>
+<p>Agregar un Repositorio Remoto</p>
+<p>Puede agregar un repositorio remoto a su repositorio local con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>nombre_remoto<span class="w"> </span>URL_del_repositorio_remoto
+</code></pre></div>
+<h3 id="enviar-cambios-a-un-repositorio-remoto">Enviar Cambios a un Repositorio Remoto</h3>
+<p>Para enviar sus cambios locales a un repositorio remoto, use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>git<span class="w"> </span>push<span class="w"> </span>nombre_remoto<span class="w"> </span>nombre_rama
+</code></pre></div>
+<h3 id="obtener-cambios-de-un-repositorio-remoto">Obtener Cambios de un Repositorio Remoto</h3>
+<p>Para obtener los cambios realizados en un repositorio remoto, use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>git<span class="w"> </span>pull<span class="w"> </span>nombre_remoto<span class="w"> </span>nombre_rama
+</code></pre></div>
+<h2 id="7-git-en-la-practica">7. Git en la Práctica</h2>
+<h3 id="ejemplo-creacion-de-un-repositorio-y-confirmacion-de-cambios">Ejemplo: Creación de un Repositorio y Confirmación de Cambios</h3>
+<p>Comencemos con un ejemplo práctico. Supongamos que desea iniciar un nuevo proyecto y rastrear los cambios utilizando Git. Aquí hay una serie de pasos que puede seguir:</p>
+<h4 id="paso-1-inicializar-un-repositorio">Paso 1: Inicializar un Repositorio</h4>
+<p>Primero, cree un directorio para su proyecto y navegue a él en la terminal. Luego, ejecute el siguiente comando para iniciar un repositorio Git en ese directorio:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>mkdir<span class="w"> </span>mi_proyecto
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nb">cd</span><span class="w"> </span>mi_proyecto
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>git<span class="w"> </span>init
+</code></pre></div>
+<h4 id="paso-2-agregar-y-confirmar-cambios">Paso 2: Agregar y Confirmar Cambios</h4>
+<p>Cree un archivo en su proyecto (por ejemplo, <code>main.py</code>) y agregue algo de código. Luego, use los siguientes comandos para agregar y confirmar sus cambios:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;print(&#39;Hola, mundo&#39;)&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>main.py
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>git<span class="w"> </span>add<span class="w"> </span>main.py
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Agregado archivo main.py con un saludo&quot;</span>
+</code></pre></div>
+<h4 id="paso-3-ver-el-historial">Paso 3: Ver el Historial</h4>
+<p>Puede ver el historial de confirmaciones utilizando el comando <code>git log</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>git<span class="w"> </span>log
+</code></pre></div>
+<h3 id="ejemplo-trabajo-con-ramas">Ejemplo: Trabajo con Ramas</h3>
+<p>Supongamos que desea trabajar en una nueva característica para su proyecto en una rama separada. A continuación, se muestra cómo puede hacerlo:</p>
+<h4 id="paso-1-crear-una-rama">Paso 1: Crear una Rama</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>git<span class="w"> </span>branch<span class="w"> </span>nueva_caracteristica
+</code></pre></div>
+<h4 id="paso-2-cambiar-de-rama">Paso 2: Cambiar de Rama</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>nueva_caracteristica
+</code></pre></div>
+<h4 id="paso-3-realizar-cambios-y-confirmar">Paso 3: Realizar Cambios y Confirmar</h4>
+<p>Haga los cambios necesarios en su proyecto y confírmelos en la nueva rama:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;print(&#39;Nueva característica agregada&#39;)&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>main.py
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>git<span class="w"> </span>add<span class="w"> </span>main.py
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Agregada nueva característica&quot;</span>
+</code></pre></div>
+<h4 id="paso-4-fusionar-la-rama">Paso 4: Fusionar la Rama</h4>
+<p>Una vez que haya completado su nueva característica, puede fusionarla con la rama principal de la siguiente manera:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>master
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>git<span class="w"> </span>merge<span class="w"> </span>nueva_caracteristica
+</code></pre></div>
+<h2 id="8-conclusiones">8. Conclusiones</h2>
+<p>Git es una herramienta esencial para cualquier desarrollador de software. Permite el control de versiones, la colaboración en proyectos y el seguimiento de cambios de manera eficiente. Conocer los comandos básicos y avanzados de Git es fundamental para trabajar de manera efectiva en proyectos de desarrollo.</p>
+<p>Esta guía completa ha cubierto una variedad de conceptos y comandos de Git, desde la configuración inicial hasta operaciones más avanzadas como rebase, stash y cherry-pick. Al aplicar estos conocimientos en su flujo de trabajo diario, se convertirá en un desarrollador más eficiente y colaborativo.</p>
+<p>Recuerde que la práctica constante es clave para dominar Git. A medida que trabaje en proyectos reales y colabore con otros desarrolladores, fortalecerá sus habilidades y comprensión de Git. ¡Así que adelante, cree su repositorio, colabore en proyectos y aproveche al máximo esta poderosa herramienta de control de versiones!</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+    
+  </body>
+</html>

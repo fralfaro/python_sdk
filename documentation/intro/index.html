@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://github.com/fralfaro/python_sdk/documentation/intro/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
     
     
       
@@ -21,12 +21,14 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
         
       
+      
+
     
     
     
@@ -41,10 +43,11 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -69,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduccion" class="md-skip">
+        <a href="#documentacion-en-python-mejores-practicas-y-herramientas" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -113,6 +116,7 @@
         
           
           
+          
           <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
@@ -120,6 +124,7 @@
             </label>
           
         
+          
           
           
           <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
@@ -147,7 +152,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -171,7 +176,7 @@
         <a href="https://github.com/fralfaro/python_sdk" title="Ir al repositorio" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     fralfaro/python_sdk
@@ -216,7 +221,7 @@
       <a href="https://github.com/fralfaro/python_sdk" title="Ir al repositorio" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     fralfaro/python_sdk
@@ -351,7 +356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop/" class="md-nav__link">
+      <a href="../../oop/oop.md" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -365,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_conceptos_basicos/" class="md-nav__link">
+      <a href="../../oop/oop_conceptos_basicos.md" class="md-nav__link">
         Conceptos Básicos
       </a>
     </li>
@@ -379,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_herencia/" class="md-nav__link">
+      <a href="../../oop/oop_herencia.md" class="md-nav__link">
         Herencia
       </a>
     </li>
@@ -393,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_cohesion/" class="md-nav__link">
+      <a href="../../oop/oop_cohesion.md" class="md-nav__link">
         Cohesion
       </a>
     </li>
@@ -407,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_abstraccion/" class="md-nav__link">
+      <a href="../../oop/oop_abstraccion.md" class="md-nav__link">
         Abstraccion
       </a>
     </li>
@@ -421,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_polimorfismo/" class="md-nav__link">
+      <a href="../../oop/oop_polimorfismo.md" class="md-nav__link">
         Polimorfismo
       </a>
     </li>
@@ -435,7 +440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_acoplamiento/" class="md-nav__link">
+      <a href="../../oop/oop_acoplamiento.md" class="md-nav__link">
         Acoplamiento
       </a>
     </li>
@@ -449,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_encapsulamiento/" class="md-nav__link">
+      <a href="../../oop/oop_encapsulamiento.md" class="md-nav__link">
         Encapsulamiento
       </a>
     </li>
@@ -497,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/intro/" class="md-nav__link">
+      <a href="../../patterns/intro.md" class="md-nav__link">
         Introduccion
       </a>
     </li>
@@ -511,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/creacionales/" class="md-nav__link">
+      <a href="../../patterns/creacionales.md" class="md-nav__link">
         Patrones de creación
       </a>
     </li>
@@ -525,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/estructurales/" class="md-nav__link">
+      <a href="../../patterns/estructurales.md" class="md-nav__link">
         Patrones estructurales
       </a>
     </li>
@@ -539,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/comportamiento/" class="md-nav__link">
+      <a href="../../patterns/comportamiento.md" class="md-nav__link">
         Patrones de comportamiento
       </a>
     </li>
@@ -587,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/intro/" class="md-nav__link">
+      <a href="../../solid/intro.md" class="md-nav__link">
         Introduccion
       </a>
     </li>
@@ -601,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/1_srp/" class="md-nav__link">
+      <a href="../../solid/1_srp.md" class="md-nav__link">
         Single Responsibility Principle
       </a>
     </li>
@@ -615,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/2_ocp/" class="md-nav__link">
+      <a href="../../solid/2_ocp.md" class="md-nav__link">
         Single Responsibility Principle
       </a>
     </li>
@@ -629,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/3_lsp/" class="md-nav__link">
+      <a href="../../solid/3_lsp.md" class="md-nav__link">
         Liskov Substitution Principle
       </a>
     </li>
@@ -643,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/4_isp/" class="md-nav__link">
+      <a href="../../solid/4_isp.md" class="md-nav__link">
         Interface Segregation Principle
       </a>
     </li>
@@ -657,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/5_dip/" class="md-nav__link">
+      <a href="../../solid/5_dip.md" class="md-nav__link">
         Dependency Inversion Principle
       </a>
     </li>
@@ -705,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/code_quality/" class="md-nav__link">
+      <a href="../../code_quality/code_quality.md" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -719,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/black/" class="md-nav__link">
+      <a href="../../code_quality/black.md" class="md-nav__link">
         Black
       </a>
     </li>
@@ -733,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/flake8/" class="md-nav__link">
+      <a href="../../code_quality/flake8.md" class="md-nav__link">
         Flake8
       </a>
     </li>
@@ -747,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/mypy/" class="md-nav__link">
+      <a href="../../code_quality/mypy.md" class="md-nav__link">
         Mypy
       </a>
     </li>
@@ -761,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/precommit/" class="md-nav__link">
+      <a href="../../code_quality/precommit.md" class="md-nav__link">
         Pre-commit
       </a>
     </li>
@@ -837,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/mocker/" class="md-nav__link">
+      <a href="../../testing/mocker.md" class="md-nav__link">
         Mocker
       </a>
     </li>
@@ -865,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/plugins/" class="md-nav__link">
+      <a href="../../testing/plugins.md" class="md-nav__link">
         Plugins
       </a>
     </li>
@@ -924,9 +929,128 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Introducción
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Introducción
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importancia-de-la-documentacion" class="md-nav__link">
+    Importancia de la Documentación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docstrings" class="md-nav__link">
+    Docstrings
+  </a>
+  
+    <nav class="md-nav" aria-label="Docstrings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-son-los-docstrings" class="md-nav__link">
+    ¿Qué Son los Docstrings?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estilos-de-docstrings" class="md-nav__link">
+    Estilos de Docstrings
+  </a>
+  
+    <nav class="md-nav" aria-label="Estilos de Docstrings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-estilo-de-una-linea" class="md-nav__link">
+    1. Estilo de una Línea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-estilo-de-multiples-lineas" class="md-nav__link">
+    2. Estilo de Múltiples Líneas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatos-principales-de-docstrings" class="md-nav__link">
+    Formatos principales de docstrings
+  </a>
+  
+    <nav class="md-nav" aria-label="Formatos principales de docstrings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#numpyscipy-docstrings" class="md-nav__link">
+    NumPy/SciPy Docstrings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-docstrings" class="md-nav__link">
+    Google Docstrings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restructuredtext" class="md-nav__link">
+    reStructuredText
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epytext" class="md-nav__link">
+    Epytext
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -939,7 +1063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commenting/" class="md-nav__link">
+      <a href="../commenting.md" class="md-nav__link">
         Comentar vs Documentar
       </a>
     </li>
@@ -953,7 +1077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documenting/" class="md-nav__link">
+      <a href="../documenting.md" class="md-nav__link">
         Docstrings
       </a>
     </li>
@@ -967,7 +1091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project/" class="md-nav__link">
+      <a href="../project.md" class="md-nav__link">
         Documentar en Python
       </a>
     </li>
@@ -981,7 +1105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sphinx/" class="md-nav__link">
+      <a href="../sphinx.md" class="md-nav__link">
         Sphinx
       </a>
     </li>
@@ -1029,7 +1153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/click/" class="md-nav__link">
+      <a href="../../ecosystem/click.md" class="md-nav__link">
         Click
       </a>
     </li>
@@ -1043,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/loguru/" class="md-nav__link">
+      <a href="../../ecosystem/loguru.md" class="md-nav__link">
         Loguru
       </a>
     </li>
@@ -1057,7 +1181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/loguru/" class="md-nav__link">
+      <a href="../../ecosystem/loguru.md" class="md-nav__link">
         Loguru
       </a>
     </li>
@@ -1071,7 +1195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/plantuml/" class="md-nav__link">
+      <a href="../../ecosystem/plantuml.md" class="md-nav__link">
         Plantuml
       </a>
     </li>
@@ -1085,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/diagrams/" class="md-nav__link">
+      <a href="../../ecosystem/diagrams.md" class="md-nav__link">
         Diagrams
       </a>
     </li>
@@ -1119,44 +1243,270 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importancia-de-la-documentacion" class="md-nav__link">
+    Importancia de la Documentación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docstrings" class="md-nav__link">
+    Docstrings
+  </a>
+  
+    <nav class="md-nav" aria-label="Docstrings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-son-los-docstrings" class="md-nav__link">
+    ¿Qué Son los Docstrings?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estilos-de-docstrings" class="md-nav__link">
+    Estilos de Docstrings
+  </a>
+  
+    <nav class="md-nav" aria-label="Estilos de Docstrings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-estilo-de-una-linea" class="md-nav__link">
+    1. Estilo de una Línea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-estilo-de-multiples-lineas" class="md-nav__link">
+    2. Estilo de Múltiples Líneas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatos-principales-de-docstrings" class="md-nav__link">
+    Formatos principales de docstrings
+  </a>
+  
+    <nav class="md-nav" aria-label="Formatos principales de docstrings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#numpyscipy-docstrings" class="md-nav__link">
+    NumPy/SciPy Docstrings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-docstrings" class="md-nav__link">
+    Google Docstrings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restructuredtext" class="md-nav__link">
+    reStructuredText
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epytext" class="md-nav__link">
+    Epytext
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
-<h1 id="introduccion">Introducción</h1>
-<p>Bienvenido a su guía completa para documentar el código Python. Si está leyendo este tutorial, ya sabe la importancia de documentar su código. Pero si no, permítanme citar algo que Guido me mencionó en una PyCon reciente:</p>
-<blockquote>
-<p><strong>Code is more often read than written</strong> — Guido van Rossum</p>
-</blockquote>
-<p>Cuando escribe código, lo escribe para dos públicos principales: sus usuarios y sus desarrolladores (incluido usted mismo). Ambos públicos son igualmente importantes. Si eres como yo, probablemente hayas abierto bases de código antiguas y te hayas preguntado: "¿En qué diablos estaba pensando?" Si tiene problemas para leer su propio código, imagine lo que están experimentando sus usuarios u otros desarrolladores cuando intentan utilizar o contribuir a su código.</p>
-<p>Por el contrario, estoy seguro de que te has encontrado con una situación en la que querías hacer algo en Python y encontraste lo que parece una gran biblioteca que puede hacer el trabajo. Sin embargo, cuando comienza a usar la biblioteca, busca ejemplos, reseñas o incluso documentación oficial sobre cómo hacer algo específico y no puede encontrar la solución de inmediato.</p>
-<p>Después de buscar, se da cuenta de que falta la documentación o, lo que es peor, falta por completo. Este es un sentimiento frustrante que lo disuade de usar la biblioteca, sin importar cuán bueno o eficiente sea el código. Daniele Procida resumió mejor esta situación:</p>
-<blockquote>
-<p><strong>It doesn’t matter how good your software is, because if the documentation is not good enough, people will not use it</strong> — Daniele Procida</p>
-</blockquote>
-<p>En esta guía, aprenderá desde cero cómo documentar correctamente su código Python, desde los scripts más pequeños hasta los proyectos Python más grandes, para ayudar a evitar que sus usuarios se sientan demasiado frustrados para usar o contribuir a su proyecto.</p>
+<h1 id="documentacion-en-python-mejores-practicas-y-herramientas">Documentación en Python: Mejores Prácticas y Herramientas</h1>
+<p>La documentación es una parte fundamental del desarrollo de software. Proporciona información esencial para los desarrolladores, usuarios y colaboradores sobre cómo utilizar y contribuir a un proyecto. En Python, existen buenas prácticas y herramientas que hacen que la creación y mantenimiento de la documentación sea más fácil y efectiva. En este artículo, exploraremos la importancia de la documentación, los diferentes estilos de docstrings y dos de las principales herramientas de documentación en Python: Sphinx y Markdown.</p>
+<h2 id="importancia-de-la-documentacion">Importancia de la Documentación</h2>
+<p>La documentación es una forma de comunicación clave en el desarrollo de software. Proporciona claridad y contexto sobre el propósito, el funcionamiento y el uso de un proyecto. Algunas de las razones por las que la documentación es importante incluyen:</p>
+<ul>
+<li><strong>Facilita el Uso</strong>: Permite a los usuarios comprender cómo usar una biblioteca o aplicación sin necesidad de leer el código fuente.</li>
+<li><strong>Colaboración Eficiente</strong>: Ayuda a los colaboradores a comprender cómo contribuir al proyecto y a mantener un estándar común.</li>
+<li><strong>Resolución de Problemas</strong>: Facilita la solución de problemas al proporcionar información sobre errores comunes y ejemplos de uso.</li>
+<li><strong>Mantenimiento Sostenible</strong>: Permite que un proyecto sea mantenible a lo largo del tiempo, incluso si los desarrolladores originales ya no están disponibles.</li>
+</ul>
+<h2 id="docstrings">Docstrings</h2>
+<p>Los docstrings en Python son
+cadenas de documentación que se
+utilizan para describir el propósito y el funcionamiento de módulos, clases, funciones y métodos en el código. Estas cadenas de documentación proporcionan una forma de comunicar de manera efectiva cómo se debe utilizar y entender una pieza de software. En este artículo, exploraremos en detalle los docstrings en Python, incluyendo los diferentes estilos de docstrings y su importancia.</p>
+<h3 id="que-son-los-docstrings">¿Qué Son los Docstrings?</h3>
+<p>Los docstrings son simplemente cadenas de texto que se colocan en la parte superior de un módulo, clase, función o método en Python. Estas cadenas de texto se utilizan para documentar el código y proporcionar información sobre lo que hace ese código, cómo debe usarse y qué argumentos se esperan.</p>
+<p>En Python, los docstrings son tratados como literales de cadena y se asignan automáticamente al atributo <code>__doc__</code> de un objeto. Esto significa que puedes acceder a la cadena de documentación de cualquier objeto en Python utilizando la notación de punto, por ejemplo, <code>objeto.__doc__</code>.</p>
+<h3 id="estilos-de-docstrings">Estilos de Docstrings</h3>
+<p>Existen varios estilos y convenciones para escribir docstrings en Python. Los dos estilos de docstrings más comunes son:</p>
+<h4 id="1-estilo-de-una-linea">1. Estilo de una Línea</h4>
+<p>Este estilo es adecuado para documentar módulos, clases, funciones o métodos muy simples en una sola línea. Generalmente, se coloca entre comillas triples (simples o dobles) y se coloca inmediatamente debajo de la definición del objeto.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span> <span class="nf">suma</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Devuelve la suma de dos números.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</code></pre></div>
+<h4 id="2-estilo-de-multiples-lineas">2. Estilo de Múltiples Líneas</h4>
+<p>Este estilo se utiliza para proporcionar una documentación más detallada y estructurada. Sigue las convenciones de las PEP 257. Aquí hay un ejemplo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">dividendo</span><span class="p">,</span> <span class="n">divisor</span><span class="p">):</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="sd">    Divide el dividendo entre el divisor y devuelve el resultado.</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="sd">    Args:</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="sd">        dividendo (int): El número que se divide.</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="sd">        divisor (int): El número por el cual se divide.</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="sd">    Returns:</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="sd">        float: El resultado de la división.</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="sd">    Raises:</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="sd">        ValueError: Si el divisor es igual a cero.</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="k">if</span> <span class="n">divisor</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;No se puede dividir por cero.&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="k">return</span> <span class="n">dividendo</span> <span class="o">/</span> <span class="n">divisor</span>
+</code></pre></div>
+<p>En el ejemplo anterior:</p>
+<ul>
+<li>La sección <strong>Args</strong> describe los argumentos que la función espera y sus tipos.</li>
+<li>La sección <strong>Returns</strong> describe el valor de retorno de la función y su tipo.</li>
+<li>La sección <strong>Raises</strong> enumera las excepciones que puede generar la función.</li>
+</ul>
+<h3 id="formatos-principales-de-docstrings">Formatos principales de docstrings</h3>
+<h4 id="numpyscipy-docstrings">NumPy/SciPy Docstrings</h4>
+<p>Los docstrings de estilo NumPy/SciPy siguen las convenciones utilizadas en las bibliotecas NumPy y SciPy, que son ampliamente utilizadas en la comunidad científica de Python. Estos docstrings están diseñados para proporcionar una documentación clara y concisa para funciones y clases que trabajan con matrices multidimensionales y operaciones matemáticas.</p>
+<ul>
+<li>
+<p><strong>Ejemplo:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span> <span class="nf">matrix_multiply</span><span class="p">(</span><span class="n">matrix1</span><span class="p">,</span> <span class="n">matrix2</span><span class="p">):</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="sd">    Multiply two matrices element-wise.</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="sd">    Parameters:</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="sd">        matrix1 (numpy.ndarray): The first input matrix.</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="sd">        matrix2 (numpy.ndarray): The second input matrix.</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="sd">    Returns:</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="sd">        numpy.ndarray: The result of element-wise multiplication.</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+</li>
+</ul>
+<h4 id="google-docstrings">Google Docstrings</h4>
+<p>Los docstrings de estilo Google siguen las convenciones de documentación utilizadas por Google para documentar su código en Python. Este formato se centra en proporcionar una documentación clara y legible utilizando un estilo de lenguaje natural. Incluye secciones específicas para describir parámetros, valores de retorno y ejemplos.</p>
+<ul>
+<li>
+<p><strong>Ejemplo:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span> <span class="nf">calculate_area</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="sd">    Calculate the area of a rectangle.</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="sd">    Args:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="sd">        length (float): The length of the rectangle.</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="sd">        width (float): The width of the rectangle.</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="sd">    Returns:</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="sd">        float: The area of the rectangle.</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+</li>
+</ul>
+<h4 id="restructuredtext">reStructuredText</h4>
+<p>reStructuredText (reST) es un formato de marcado utilizado para escribir documentación estructurada en Python. Se utiliza en combinación con herramientas como Sphinx para generar documentación de alta calidad a partir de docstrings y archivos de texto en formato reST. Este formato es particularmente popular en proyectos de código abierto y bibliotecas bien documentadas.</p>
+<ul>
+<li>
+<p><strong>Ejemplo:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span> <span class="nf">calculate_volume</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="sd">    Calculate the volume of a rectangular prism.</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="sd">    :param float length: The length of the prism.</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="sd">    :param float width: The width of the prism.</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="sd">    :param float height: The height of the prism.</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="sd">    :return: The volume of the prism.</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="sd">    :rtype: float</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+</li>
+</ul>
+<h4 id="epytext">Epytext</h4>
+<p>Epytext es un formato de marcado diseñado específicamente para documentar código Python. Aunque no es tan ampliamente utilizado como los otros formatos, es una opción válida para documentar funciones y clases en Python. Epytext utiliza etiquetas especiales para describir parámetros, valores de retorno y otros elementos de la documentación.</p>
+<ul>
+<li>
+<p><strong>Ejemplo:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span> <span class="nf">calculate_perimeter</span><span class="p">(</span><span class="n">side1</span><span class="p">,</span> <span class="n">side2</span><span class="p">):</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="sd">    Calculate the perimeter of a rectangle.</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="sd">    @param side1: The length of one side of the rectangle.</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="sd">    @type side1: float</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="sd">    @param side2: The length of the adjacent side of the rectangle.</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="sd">    @type side2: float</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="sd">    @return: The perimeter of the rectangle.</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="sd">    @rtype: float</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+</li>
+</ul>
 
-              
-            </article>
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Pie">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pie" >
       
         
-        <a href="../../testing/plugins/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Plugins" rel="prev">
+        <a href="../../testing/hypothesis/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Hypothesis" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1165,26 +1515,11 @@
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Plugins
+              Hypothesis
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../commenting/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Comentar vs Documentar" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Siguiente
-              </span>
-              Comentar vs Documentar
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
@@ -1208,10 +1543,11 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
@@ -1219,6 +1555,7 @@
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
+    
     
   </body>
 </html>

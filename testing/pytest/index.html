@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://github.com/fralfaro/python_sdk/testing/pytest/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
     
     
       
@@ -21,12 +21,14 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
         
       
+      
+
     
     
     
@@ -41,10 +43,11 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -69,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unit-testing-pytest" class="md-skip">
+        <a href="#pytest" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -113,6 +116,7 @@
         
           
           
+          
           <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
@@ -120,6 +124,7 @@
             </label>
           
         
+          
           
           
           <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
@@ -147,7 +152,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -171,7 +176,7 @@
         <a href="https://github.com/fralfaro/python_sdk" title="Ir al repositorio" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     fralfaro/python_sdk
@@ -216,7 +221,7 @@
       <a href="https://github.com/fralfaro/python_sdk" title="Ir al repositorio" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     fralfaro/python_sdk
@@ -351,7 +356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop/" class="md-nav__link">
+      <a href="../../oop/oop.md" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -365,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_conceptos_basicos/" class="md-nav__link">
+      <a href="../../oop/oop_conceptos_basicos.md" class="md-nav__link">
         Conceptos Básicos
       </a>
     </li>
@@ -379,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_herencia/" class="md-nav__link">
+      <a href="../../oop/oop_herencia.md" class="md-nav__link">
         Herencia
       </a>
     </li>
@@ -393,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_cohesion/" class="md-nav__link">
+      <a href="../../oop/oop_cohesion.md" class="md-nav__link">
         Cohesion
       </a>
     </li>
@@ -407,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_abstraccion/" class="md-nav__link">
+      <a href="../../oop/oop_abstraccion.md" class="md-nav__link">
         Abstraccion
       </a>
     </li>
@@ -421,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_polimorfismo/" class="md-nav__link">
+      <a href="../../oop/oop_polimorfismo.md" class="md-nav__link">
         Polimorfismo
       </a>
     </li>
@@ -435,7 +440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_acoplamiento/" class="md-nav__link">
+      <a href="../../oop/oop_acoplamiento.md" class="md-nav__link">
         Acoplamiento
       </a>
     </li>
@@ -449,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_encapsulamiento/" class="md-nav__link">
+      <a href="../../oop/oop_encapsulamiento.md" class="md-nav__link">
         Encapsulamiento
       </a>
     </li>
@@ -497,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/intro/" class="md-nav__link">
+      <a href="../../patterns/intro.md" class="md-nav__link">
         Introduccion
       </a>
     </li>
@@ -511,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/creacionales/" class="md-nav__link">
+      <a href="../../patterns/creacionales.md" class="md-nav__link">
         Patrones de creación
       </a>
     </li>
@@ -525,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/estructurales/" class="md-nav__link">
+      <a href="../../patterns/estructurales.md" class="md-nav__link">
         Patrones estructurales
       </a>
     </li>
@@ -539,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/comportamiento/" class="md-nav__link">
+      <a href="../../patterns/comportamiento.md" class="md-nav__link">
         Patrones de comportamiento
       </a>
     </li>
@@ -587,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/intro/" class="md-nav__link">
+      <a href="../../solid/intro.md" class="md-nav__link">
         Introduccion
       </a>
     </li>
@@ -601,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/1_srp/" class="md-nav__link">
+      <a href="../../solid/1_srp.md" class="md-nav__link">
         Single Responsibility Principle
       </a>
     </li>
@@ -615,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/2_ocp/" class="md-nav__link">
+      <a href="../../solid/2_ocp.md" class="md-nav__link">
         Single Responsibility Principle
       </a>
     </li>
@@ -629,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/3_lsp/" class="md-nav__link">
+      <a href="../../solid/3_lsp.md" class="md-nav__link">
         Liskov Substitution Principle
       </a>
     </li>
@@ -643,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/4_isp/" class="md-nav__link">
+      <a href="../../solid/4_isp.md" class="md-nav__link">
         Interface Segregation Principle
       </a>
     </li>
@@ -657,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/5_dip/" class="md-nav__link">
+      <a href="../../solid/5_dip.md" class="md-nav__link">
         Dependency Inversion Principle
       </a>
     </li>
@@ -705,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/code_quality/" class="md-nav__link">
+      <a href="../../code_quality/code_quality.md" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -719,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/black/" class="md-nav__link">
+      <a href="../../code_quality/black.md" class="md-nav__link">
         Black
       </a>
     </li>
@@ -733,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/flake8/" class="md-nav__link">
+      <a href="../../code_quality/flake8.md" class="md-nav__link">
         Flake8
       </a>
     </li>
@@ -747,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/mypy/" class="md-nav__link">
+      <a href="../../code_quality/mypy.md" class="md-nav__link">
         Mypy
       </a>
     </li>
@@ -761,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/precommit/" class="md-nav__link">
+      <a href="../../code_quality/precommit.md" class="md-nav__link">
         Pre-commit
       </a>
     </li>
@@ -863,12 +868,47 @@
     Introducción
   </a>
   
-    <nav class="md-nav" aria-label="Introducción">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" class="md-nav__link">
+    Instalación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-las-pruebas" class="md-nav__link">
+    Estructura de las pruebas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeros-pasos-con-pytest" class="md-nav__link">
+    Primeros pasos con Pytest
+  </a>
+  
+    <nav class="md-nav" aria-label="Primeros pasos con Pytest">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#uso-de-pytest" class="md-nav__link">
-    Uso de Pytest
+  <a href="#creacion-de-funciones-para-probar" class="md-nav__link">
+    Creación de funciones para probar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escribir-pruebas-basicas" class="md-nav__link">
+    Escribir pruebas básicas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejecutar-las-pruebas" class="md-nav__link">
+    Ejecutar las pruebas
   </a>
   
 </li>
@@ -879,79 +919,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pytest-skip" class="md-nav__link">
-    Pytest skip
+  <a href="#marcadores-markers" class="md-nav__link">
+    Marcadores (Markers)
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pytest-xfail" class="md-nav__link">
-    Pytest Xfail
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pytest-marking" class="md-nav__link">
-    Pytest marking
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pytest-parameterized-tests" class="md-nav__link">
-    Pytest parameterized tests
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pytest-fixtures" class="md-nav__link">
-    Pytest fixtures
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pytest-layouts" class="md-nav__link">
-    Pytest layouts
-  </a>
-  
-    <nav class="md-nav" aria-label="Pytest layouts">
+    <nav class="md-nav" aria-label="Marcadores (Markers)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#integrated-tests" class="md-nav__link">
-    Integrated tests
+  <a href="#ejemplo-de-uso-de-marcadores-incorporados" class="md-nav__link">
+    Ejemplo de uso de marcadores incorporados
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplo de uso de marcadores incorporados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pytestmarkskip" class="md-nav__link">
+    @pytest.mark.skip
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-crear-archivos-previos-del-ejemplos" class="md-nav__link">
-    a) crear archivos previos del ejemplos
+  <a href="#pytestmarkxfail" class="md-nav__link">
+    @pytest.mark.xfail
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#b-crear-archivos-py-a-testear" class="md-nav__link">
-    b) crear archivos .py a testear
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#c-crear-los-tests" class="md-nav__link">
-    c) crear los tests
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#d-correr-los-test" class="md-nav__link">
-    d) correr los test !
+  <a href="#ejemplo-de-marcador-personalizado" class="md-nav__link">
+    Ejemplo de marcador personalizado
   </a>
   
 </li>
@@ -962,29 +966,70 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tests-outside-the-package" class="md-nav__link">
-    Tests outside the package
+  <a href="#parametros-en-pruebas-parametrizadas" class="md-nav__link">
+    Parámetros en pruebas parametrizadas
   </a>
   
-    <nav class="md-nav" aria-label="Tests outside the package">
+    <nav class="md-nav" aria-label="Parámetros en pruebas parametrizadas">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-crear-diseno-del-ejemplo" class="md-nav__link">
-    a) crear diseño del ejemplo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b-correr-los-test" class="md-nav__link">
-    b) Correr los test !
+  <a href="#ejemplo-de-prueba-parametrizada" class="md-nav__link">
+    Ejemplo de prueba parametrizada
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-fixtures" class="md-nav__link">
+    Uso de fixtures
+  </a>
+  
+    <nav class="md-nav" aria-label="Uso de fixtures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-fixture" class="md-nav__link">
+    Ejemplo de fixture
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizacion-de-pruebas-en-carpetas" class="md-nav__link">
+    Organización de pruebas en carpetas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pruebas-de-unidad" class="md-nav__link">
+    Pruebas de unidad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pruebas-de-integracion" class="md-nav__link">
+    Pruebas de integración
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pruebas-de-extremo-a-extremo-end-to-end" class="md-nav__link">
+    Pruebas de extremo a extremo (End-to-End)
+  </a>
   
 </li>
       
@@ -1003,7 +1048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mocker/" class="md-nav__link">
+      <a href="../mocker.md" class="md-nav__link">
         Mocker
       </a>
     </li>
@@ -1031,7 +1076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../plugins/" class="md-nav__link">
+      <a href="../plugins.md" class="md-nav__link">
         Plugins
       </a>
     </li>
@@ -1093,7 +1138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/commenting/" class="md-nav__link">
+      <a href="../../documentation/commenting.md" class="md-nav__link">
         Comentar vs Documentar
       </a>
     </li>
@@ -1107,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/documenting/" class="md-nav__link">
+      <a href="../../documentation/documenting.md" class="md-nav__link">
         Docstrings
       </a>
     </li>
@@ -1121,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/project/" class="md-nav__link">
+      <a href="../../documentation/project.md" class="md-nav__link">
         Documentar en Python
       </a>
     </li>
@@ -1135,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/sphinx/" class="md-nav__link">
+      <a href="../../documentation/sphinx.md" class="md-nav__link">
         Sphinx
       </a>
     </li>
@@ -1183,7 +1228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/click/" class="md-nav__link">
+      <a href="../../ecosystem/click.md" class="md-nav__link">
         Click
       </a>
     </li>
@@ -1197,7 +1242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/loguru/" class="md-nav__link">
+      <a href="../../ecosystem/loguru.md" class="md-nav__link">
         Loguru
       </a>
     </li>
@@ -1211,7 +1256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/loguru/" class="md-nav__link">
+      <a href="../../ecosystem/loguru.md" class="md-nav__link">
         Loguru
       </a>
     </li>
@@ -1225,7 +1270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/plantuml/" class="md-nav__link">
+      <a href="../../ecosystem/plantuml.md" class="md-nav__link">
         Plantuml
       </a>
     </li>
@@ -1239,7 +1284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/diagrams/" class="md-nav__link">
+      <a href="../../ecosystem/diagrams.md" class="md-nav__link">
         Diagrams
       </a>
     </li>
@@ -1284,12 +1329,47 @@
     Introducción
   </a>
   
-    <nav class="md-nav" aria-label="Introducción">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" class="md-nav__link">
+    Instalación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-las-pruebas" class="md-nav__link">
+    Estructura de las pruebas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeros-pasos-con-pytest" class="md-nav__link">
+    Primeros pasos con Pytest
+  </a>
+  
+    <nav class="md-nav" aria-label="Primeros pasos con Pytest">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#uso-de-pytest" class="md-nav__link">
-    Uso de Pytest
+  <a href="#creacion-de-funciones-para-probar" class="md-nav__link">
+    Creación de funciones para probar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escribir-pruebas-basicas" class="md-nav__link">
+    Escribir pruebas básicas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejecutar-las-pruebas" class="md-nav__link">
+    Ejecutar las pruebas
   </a>
   
 </li>
@@ -1300,79 +1380,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pytest-skip" class="md-nav__link">
-    Pytest skip
+  <a href="#marcadores-markers" class="md-nav__link">
+    Marcadores (Markers)
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pytest-xfail" class="md-nav__link">
-    Pytest Xfail
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pytest-marking" class="md-nav__link">
-    Pytest marking
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pytest-parameterized-tests" class="md-nav__link">
-    Pytest parameterized tests
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pytest-fixtures" class="md-nav__link">
-    Pytest fixtures
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pytest-layouts" class="md-nav__link">
-    Pytest layouts
-  </a>
-  
-    <nav class="md-nav" aria-label="Pytest layouts">
+    <nav class="md-nav" aria-label="Marcadores (Markers)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#integrated-tests" class="md-nav__link">
-    Integrated tests
+  <a href="#ejemplo-de-uso-de-marcadores-incorporados" class="md-nav__link">
+    Ejemplo de uso de marcadores incorporados
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplo de uso de marcadores incorporados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pytestmarkskip" class="md-nav__link">
+    @pytest.mark.skip
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-crear-archivos-previos-del-ejemplos" class="md-nav__link">
-    a) crear archivos previos del ejemplos
+  <a href="#pytestmarkxfail" class="md-nav__link">
+    @pytest.mark.xfail
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#b-crear-archivos-py-a-testear" class="md-nav__link">
-    b) crear archivos .py a testear
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#c-crear-los-tests" class="md-nav__link">
-    c) crear los tests
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#d-correr-los-test" class="md-nav__link">
-    d) correr los test !
+  <a href="#ejemplo-de-marcador-personalizado" class="md-nav__link">
+    Ejemplo de marcador personalizado
   </a>
   
 </li>
@@ -1383,29 +1427,70 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tests-outside-the-package" class="md-nav__link">
-    Tests outside the package
+  <a href="#parametros-en-pruebas-parametrizadas" class="md-nav__link">
+    Parámetros en pruebas parametrizadas
   </a>
   
-    <nav class="md-nav" aria-label="Tests outside the package">
+    <nav class="md-nav" aria-label="Parámetros en pruebas parametrizadas">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-crear-diseno-del-ejemplo" class="md-nav__link">
-    a) crear diseño del ejemplo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b-correr-los-test" class="md-nav__link">
-    b) Correr los test !
+  <a href="#ejemplo-de-prueba-parametrizada" class="md-nav__link">
+    Ejemplo de prueba parametrizada
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-fixtures" class="md-nav__link">
+    Uso de fixtures
+  </a>
+  
+    <nav class="md-nav" aria-label="Uso de fixtures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-fixture" class="md-nav__link">
+    Ejemplo de fixture
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizacion-de-pruebas-en-carpetas" class="md-nav__link">
+    Organización de pruebas en carpetas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pruebas-de-unidad" class="md-nav__link">
+    Pruebas de unidad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pruebas-de-integracion" class="md-nav__link">
+    Pruebas de integración
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pruebas-de-extremo-a-extremo-end-to-end" class="md-nav__link">
+    Pruebas de extremo a extremo (End-to-End)
+  </a>
   
 </li>
       
@@ -1417,548 +1502,248 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
-<h1 id="unit-testing-pytest">Unit testing: Pytest</h1>
+<h1 id="pytest">Pytest</h1>
 <h2 id="introduccion">Introducción</h2>
-<p>El framework <a href="https://docs.pytest.org/en/stable/">pytest</a> facilita la escritura de pequeños tests, pero escala para admitir test funcionales complejas para aplicaciones y librerias.</p>
-<p>Si ha escrito pruebas unitarias para su código Python antes, es posible que haya utilizado el módulo <code>unittest</code> integrado de Python. <code>unittest</code> proporciona una base sólida sobre la cual construir su suite de pruebas, pero tiene algunas deficiencias.</p>
-<p>Varios marcos de prueba de terceros intentan abordar algunos de los problemas con unittest, y pytest ha demostrado ser uno de los más populares. pytest es un ecosistema basado en complementos y rico en funciones para probar su código Python.</p>
-<h3 id="uso-de-pytest">Uso de Pytest</h3>
-<p>Si no se especifican argumentos, los archivos de tests se buscan en ubicaciones desde las rutas de tests (si están configuradas) o el directorio actual. Alternativamente, los argumentos de la línea de comandos se pueden utilizar en cualquier combinación de directorios, nombres de archivos o ID de nodo.</p>
-<p>En los directorios seleccionados, pytest busca archivos de <code>test _ *.py</code> o <code>*_test.py</code>. En los archivos seleccionados, pytest busca funciones de test con prefijo test.</p>
-<p>Veamos un ejemplo sencillo de esto:</p>
-<p><strong>a) Escribir funciones a testear</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">algo</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">def</span> <span class="nf">max</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">_max</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="k">if</span> <span class="n">val</span> <span class="o">&gt;</span> <span class="n">_max</span><span class="p">:</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>            <span class="n">_max</span> <span class="o">=</span> <span class="n">val</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="k">return</span> <span class="n">_max</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="k">def</span> <span class="nf">min</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">_min</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="k">if</span> <span class="n">val</span> <span class="o">&lt;</span> <span class="n">_min</span><span class="p">:</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            <span class="n">_min</span> <span class="o">=</span> <span class="n">val</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="k">return</span> <span class="n">_min</span>
+<p>Pytest es un framework de pruebas en Python que simplifica el proceso de escribir y ejecutar pruebas de unidad y funcionales. A lo largo de este artículo, exploraremos en detalle cómo usar Pytest para escribir pruebas, organizarlas y aprovechar algunas de sus características avanzadas. También se proporcionarán ejemplos concretos para ilustrar cada concepto.</p>
+<h2 id="instalacion">Instalación</h2>
+<p>Para comenzar, debes asegurarte de tener Pytest instalado en tu entorno. Si aún no lo has hecho, puedes instalarlo utilizando pip:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>pytest
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing algo.py
+<h2 id="estructura-de-las-pruebas">Estructura de las pruebas</h2>
+<p>Antes de profundizar en el uso de Pytest, es importante comprender cómo se estructuran las pruebas en un proyecto. Pytest busca automáticamente archivos de prueba en directorios y archivos que sigan una convención específica. Aquí hay un ejemplo de una estructura de proyecto de prueba:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mi_proyecto/
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>|-- mi_modulo.py
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>|-- tests/
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>|   |-- test_mi_modulo.py
 </code></pre></div>
-<p><strong>b) Escribir los tests</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">test_min_max</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">import</span> <span class="nn">algo</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">def</span> <span class="nf">test_min</span><span class="p">():</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">values</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">val</span> <span class="o">=</span> <span class="n">algo</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="k">assert</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">1</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="k">def</span> <span class="nf">test_max</span><span class="p">():</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="n">values</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="n">val</span> <span class="o">=</span> <span class="n">algo</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="k">assert</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">6</span>
+<p>En este ejemplo:</p>
+<ul>
+<li><code>mi_proyecto</code> es el directorio principal de tu proyecto.</li>
+<li><code>mi_modulo.py</code> es el módulo que deseas probar.</li>
+<li><code>tests</code> es un directorio que contiene archivos de prueba.</li>
+<li><code>test_mi_modulo.py</code> es el archivo de prueba específico para <code>mi_modulo.py</code>.</li>
+</ul>
+<p>Pytest busca archivos que comiencen con <code>test_</code> o terminen con <code>_test.py</code> en el directorio <code>tests</code> por defecto. Puedes personalizar estas convenciones si es necesario.</p>
+<h2 id="primeros-pasos-con-pytest">Primeros pasos con Pytest</h2>
+<p>Ahora, vamos a crear algunas pruebas simples para un módulo hipotético llamado <code>mi_modulo.py</code>.</p>
+<h3 id="creacion-de-funciones-para-probar">Creación de funciones para probar</h3>
+<p>Primero, creemos algunas funciones en <code>mi_modulo.py</code> que queremos probar. Aquí hay un ejemplo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># mi_modulo.py</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">def</span> <span class="nf">sumar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">def</span> <span class="nf">restar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing test_min_max.py
+<h3 id="escribir-pruebas-basicas">Escribir pruebas básicas</h3>
+<p>A continuación, crearemos un archivo de prueba llamado <code>test_mi_modulo.py</code> en el directorio <code>tests</code> para escribir nuestras pruebas. Las funciones de prueba deben comenzar con <code>test_</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># test_mi_modulo.py</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span> <span class="nn">mi_modulo</span> <span class="kn">import</span> <span class="n">sumar</span><span class="p">,</span> <span class="n">restar</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">def</span> <span class="nf">test_sumar</span><span class="p">():</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">resultado</span> <span class="o">=</span> <span class="n">sumar</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">assert</span> <span class="n">resultado</span> <span class="o">==</span> <span class="mi">5</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">def</span> <span class="nf">test_restar</span><span class="p">():</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">resultado</span> <span class="o">=</span> <span class="n">restar</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="k">assert</span> <span class="n">resultado</span> <span class="o">==</span> <span class="mi">3</span>
 </code></pre></div>
-<p>El archivo <code>test_min_max.py</code> tiene una palabra de <strong>test</strong> en su nombre. Nos sirve para diferenciar entre un script de python genérico respecto a uno de testeo.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="err">!</span><span class="n">pytest</span> <span class="n">test_min_max</span><span class="o">.</span><span class="n">py</span>
+<h3 id="ejecutar-las-pruebas">Ejecutar las pruebas</h3>
+<p>Para ejecutar las pruebas, simplemente ejecuta <code>pytest</code> desde el directorio raíz del proyecto:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pytest
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>[1m============================= test session starts ==============================[0m
-platform linux -- Python 3.8.5, pytest-5.4.3, py-1.10.0, pluggy-0.13.1
-rootdir: /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing
-plugins: hypothesis-5.49.0, cov-2.11.1
-collected 2 items                                                              [0m
+<p>Pytest buscará automáticamente los archivos de prueba en el directorio <code>tests</code> y ejecutará las pruebas. Deberías ver una salida similar a esta:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>============================== test session starts ===============================
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>platform linux -- Python 3.x.x, pytest-6.x.x, pluggy-0.x.x
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>rootdir: /ruta/a/tu/proyecto
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>collected 2 items                                                              
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>test_mi_modulo.py ..                                                      [100%]
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>=============================== 2 passed in 0.12s ===============================
+</code></pre></div>
+<p>Esto indica que ambas pruebas han pasado con éxito.</p>
+<h2 id="marcadores-markers">Marcadores (Markers)</h2>
+<p>Los marcadores son etiquetas que puedes aplicar a tus pruebas y que te permiten organizar y ejecutar pruebas de manera selectiva. Pytest incluye varios marcadores incorporados, como <code>@pytest.mark.skip</code>, <code>@pytest.mark.xfail</code>, y otros, pero también puedes crear tus propios marcadores personalizados.</p>
+<h3 id="ejemplo-de-uso-de-marcadores-incorporados">Ejemplo de uso de marcadores incorporados</h3>
+<h4 id="pytestmarkskip"><code>@pytest.mark.skip</code></h4>
+<p>Este marcador permite omitir una prueba específica. Por ejemplo, si tienes una prueba que no es relevante en un sistema operativo en particular, puedes omitirla con <code>@pytest.mark.skip</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span> <span class="nn">pytest</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">skip</span><span class="p">(</span><span class="n">reason</span><span class="o">=</span><span class="s2">&quot;No es relevante en Linux&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">def</span> <span class="nf">test_alguna_prueba</span><span class="p">():</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="c1"># Tu código de prueba aquí</span>
+</code></pre></div>
+<h4 id="pytestmarkxfail"><code>@pytest.mark.xfail</code></h4>
+<p>Este marcador indica que se espera que una prueba falle. Puede ser útil cuando se está trabajando en el desarrollo y se sabe que una prueba fallará hasta que se implemente una corrección.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span> <span class="nn">pytest</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">xfail</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="k">def</span> <span class="nf">test_prueba_que_fallara</span><span class="p">():</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="c1"># Tu código de prueba aquí</span>
+</code></pre></div>
+<h3 id="ejemplo-de-marcador-personalizado">Ejemplo de marcador personalizado</h3>
+<p>Puedes crear tus propios marcadores personalizados para clasificar tus pruebas de acuerdo a tus necesidades. Por ejemplo, podrías crear un marcador personalizado llamado <code>@pytest.mark.api</code> para pruebas relacionadas con una API.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span> <span class="nn">pytest</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">api</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">def</span> <span class="nf">test_obtener_datos_de_la_api</span><span class="p">():</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="c1"># Tu código de prueba aquí</span>
+</code></pre></div>
+<p>Luego, puedes ejecutar pruebas específicas con marcadores usando el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pytest<span class="w"> </span>-m<span class="w"> </span>marcador
+</code></pre></div>
+<p>Por ejemplo, para ejecutar todas las pruebas con el marcador <code>@pytest.mark.api</code>, puedes usar:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>pytest<span class="w"> </span>-m<span class="w"> </span>api
+</code></pre></div>
+<h2 id="parametros-en-pruebas-parametrizadas">Parámetros en pruebas parametrizadas</h2>
+<p>Pytest permite definir parámetros en pruebas parametrizadas. Esto es útil cuando deseas ejecutar la misma prueba con diferentes conjuntos de datos o condiciones. Para usar pruebas parametrizadas, utiliza el decorador <code>@pytest.mark.parametrize</code>.</p>
+<h3 id="ejemplo-de-prueba-parametrizada">Ejemplo de prueba parametrizada</h3>
+<p>Supongamos que queremos probar una función <code>dividir(a, b)</code> con varios conjuntos de datos de entrada y resultados esperados. Podemos hacerlo de la siguiente manera:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">import</span> <span class="nn">pytest</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="k">def</span> <span class="nf">dividir</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span><span class="s2">&quot;entrada, resultado_esperado&quot;</span><span class="p">,</span> <span class="p">[</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>    <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>    <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="p">])</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="k">def</span> <span class="nf">test_dividir</span><span class="p">(</span><span class="n">entrada</span><span class="p">,</span> <span class="n">resultado_esperado</span><span class="p">):</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>    <span class="n">resultado</span> <span class="o">=</span> <span class="n">dividir</span><span class="p">(</span><span class="n">entrada</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>    <span class="k">assert</span> <span class="n">resultado</span> <span class="o">==</span> <span class="n">resultado_esperado</span>
+</code></pre></div>
+<p>En este ejemplo, hemos parametrizado la prueba con tres conjuntos de datos diferentes, lo que significa que la prueba <code>test_dividir</code> se ejecutará tres veces, una vez para cada conjunto de datos. Pytest tomará automáticamente los valores de entrada y resultados esperados y los pasará como argumentos a la función de prueba.</p>
+<h2 id="uso-de-fixtures">Uso de fixtures</h2>
+<p>Las fixtures son funciones que proporcionan datos de configuración o recursos necesarios para las pruebas. Puedes utilizar el decorador <code>@pytest.fixture</code> para definir una fixture.</p>
+<h3 id="ejemplo-de-fixture">Ejemplo de fixture</h3>
+<p>Supongamos que tenemos una base de datos SQLite que queremos usar en nuestras pruebas. Podemos crear una fixture para crear y configurar la base de datos antes de que las pruebas la utilicen.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">import</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a> <span class="nn">pytest</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="kn">import</span> <span class="nn">sqlite3</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="c1"># Fixture para crear y configurar la base de datos</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="k">def</span> <span class="nf">base_de_datos</span><span class="p">():</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>    <span class="n">conexion</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;:memory:&#39;</span><span class="p">)</span>  <span class="c1"># Base de datos en memoria</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conexion</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;CREATE TABLE usuarios (id INTEGER PRIMARY KEY, nombre TEXT)&#39;&#39;&#39;</span><span class="p">)</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>    <span class="n">conexion</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>    <span class="k">yield</span> <span class="n">conexion</span>  <span class="c1"># Proporciona la conexión a las pruebas</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>    <span class="n">conexion</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># Cierra la conexión después de las pruebas</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="c1"># Ejemplo de prueba que utiliza la fixture</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="k">def</span> <span class="nf">test_insertar_usuario</span><span class="p">(</span><span class="n">base_de_datos</span><span class="p">):</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>    <span class="n">cursor</span> <span class="o">=</span> <span class="n">base_de_datos</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO usuarios (nombre) VALUES (&#39;Alice&#39;)&quot;</span><span class="p">)</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>    <span class="n">base_de_datos</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT nombre FROM usuarios WHERE id=1&quot;</span><span class="p">)</span>
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a>    <span class="n">resultado</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()</span>
+<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>    <span class="k">assert</span> <span class="n">resultado</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Alice&#39;</span>
+</code></pre></div>
+<p>En este ejemplo, la fixture <code>base_de_datos</code> crea una base de datos SQLite en memoria y la configura con una tabla de usuarios. Luego, la conexión a la base de datos se proporciona como un argumento a la función de prueba <code>test_insertar_usuario</code>.</p>
+<h2 id="organizacion-de-pruebas-en-carpetas">Organización de pruebas en carpetas</h2>
+<p>Organizar tus pruebas en carpetas es una buena práctica para mantener tu código organizado y fácil de mantener. A continuación, se muestra una estructura de carpetas común para un proyecto de prueba:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>mi_proyecto/
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>|-- mi_modulo.py
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>|-- tests/
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>|   |-- unit/
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>|   |   |-- test_mi_modulo.py
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>|   |-- integration/
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>|   |   |-- test_integracion.py
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>|   |-- end_to_end/
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>|       |-- test_e2e.py
+</code></pre></div>
+<p>En esta estructura:</p>
+<ul>
+<li><code>mi_proyecto</code> es el directorio principal de tu proyecto.</li>
+<li><code>mi_modulo.py</code> es el módulo que deseas probar.</li>
+<li><code>tests</code> es el directorio que contiene todas las pruebas.</li>
+<li><code>unit</code> es una carpeta que contiene pruebas de unidades.</li>
+<li><code>integration</code> es una carpeta que contiene pruebas de integración.</li>
+<li><code>end_to_end</code> es una carpeta que contiene pruebas de extremo a extremo.</li>
+</ul>
+<p>Puedes crear tantas carpetas de prueba como necesites para organizar tus pruebas de manera lógica. A continuación, se detallan algunos ejemplos de cómo escribir pruebas en estas carpetas.</p>
+<h2 id="pruebas-de-unidad">Pruebas de unidad</h2>
+<p>Las pruebas de unidad se centran en probar unidades individuales de código, como funciones o métodos, de forma aislada. Aquí hay un ejemplo de cómo escribir pruebas de unidad:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># mi_modulo.py</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">def</span> <span class="nf">sumar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="k">def</span> <span class="nf">restar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># tests/unit/test_mi_modulo.py</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kn">from</span> <span class="nn">mi_modulo</span> <span class="kn">import</span> <span class="n">sumar</span><span class="p">,</span> <span class="n">restar</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="k">def</span> <span class="nf">test_sumar</span><span class="p">():</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="n">resultado</span> <span class="o">=</span> <span class="n">sumar</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>    <span class="k">assert</span> <span class="n">resultado</span> <span class="o">==</span> <span class="mi">5</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="k">def</span> <span class="nf">test_restar</span><span class="p">():</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>    <span class="n">resultado</span> <span class="o">=</span> <span class="n">restar</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>    <span class="k">assert</span> <span class="n">resultado</span> <span class="o">==</span> <span class="mi">3</span>
+</code></pre></div>
+<p>Para ejecutar estas pruebas de unidad, utiliza el comando <code>pytest</code> desde la carpeta raíz del proyecto:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>pytest<span class="w"> </span>tests/unit
+</code></pre></div>
+<h2 id="pruebas-de-integracion">Pruebas de integración</h2>
+<p>Las pruebas de integración verifican cómo varias partes de un sistema interactúan entre sí. Aquí hay un ejemplo de cómo escribir pruebas de integración para el mismo módulo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># tests/integration/test_integracion.py</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="kn">from</span> <span class="nn">mi_modulo</span> <span class="kn">import</span> <span class="n">sumar</span><span class="p">,</span> <span class="n">restar</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="k">def</span> <span class="nf">test_sumar_y_restar</span><span class="p">():</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    <span class="n">resultado1</span> <span class="o">=</span> <span class="n">sumar</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>    <span class="n">resultado2</span> <span class="o">=</span> <span class="n">restar</span><span class="p">(</span><span class="n">resultado1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>    <span class="k">assert</span> <span class="n">resultado2</span> <span class="o">==</span> <span class="mi">4</span>
+</code></pre></div>
+<p>Para ejecutar estas pruebas de integración, utiliza el comando <code>pytest</code> desde la carpeta raíz del proyecto:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>pytest<span class="w"> </span>tests/integration
+</code></pre></div>
+<h2 id="pruebas-de-extremo-a-extremo-end-to-end">Pruebas de extremo a extremo (End-to-End)</h2>
+<p>Las pruebas de extremo a extremo (E2E) verifican todo el flujo de una aplicación, desde la entrada hasta la salida. Estas pruebas son más complejas y pueden involucrar múltiples componentes o sistemas. A continuación, un ejemplo de cómo escribir pruebas E2E:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># tests/end_to_end/test_e2e.py</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="k">def</span> <span class="nf">test_flujo_completo</span><span class="p">():</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>    <span class="c1"># Simula el flujo completo de la aplicación</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>    <span class="c1"># (por ejemplo, abrir la aplicación, interactuar con la interfaz de usuario, etc.)</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>    <span class="n">resultado</span> <span class="o">=</span> <span class="n">funcion_principal_de_la_aplicacion</span><span class="p">()</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>    <span class="k">assert</span> <span class="n">resultado</span> <span class="o">==</span> <span class="s2">&quot;Éxito&quot;</span>
+</code></pre></div>
+<p>Las pruebas E2E pueden ser más complicadas y requerir herramientas adicionales para simular la interacción del usuario o configurar el entorno adecuadamente. El enfoque de estas pruebas depende de la naturaleza de tu aplicación.</p>
+<p>Para ejecutar estas pruebas E2E, utiliza el comando <code>pytest</code> desde la carpeta raíz del proyecto:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>pytest<span class="w"> </span>tests/end_to_end
+</code></pre></div>
+<p>Con esta estructura de carpetas y ejemplos, puedes organizar tus pruebas de manera efectiva y ejecutar pruebas específicas según tus necesidades. A medida que desarrollas tu proyecto, puedes agregar más pruebas a cada carpeta según sea necesario.</p>
 
-test_min_max.py [32m.[0m[32m.[0m[32m                                                       [100%][0m
 
-[32m============================== [32m[1m2 passed[0m[32m in 0.02s[0m[32m ===============================[0m
-</code></pre></div>
-<p>Esta es la salida. Hubo dos pruebas y ambas han pasado con éxito. Se muestra una salida más detallada con <code>pytest -v test_min_max.py</code>.</p>
-<h2 id="pytest-skip">Pytest skip</h2>
-<p>Con el decorador de <code>skip</code>, podemos omitir los test especificados. Hay varias razones para saltarse el test; por ejemplo, una base de datos/servicio en línea no está disponible en este momento o nos saltamos los test específicas de Linux en Windows.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">skipping</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">import</span> <span class="nn">algo</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">import</span> <span class="nn">pytest</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">skip</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="k">def</span> <span class="nf">test_min</span><span class="p">():</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="n">values</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">val</span> <span class="o">=</span> <span class="n">algo</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="k">assert</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">1</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="k">def</span> <span class="nf">test_max</span><span class="p">():</span>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="n">values</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    <span class="n">val</span> <span class="o">=</span> <span class="n">algo</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    <span class="k">assert</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">6</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing skipping.py
-</code></pre></div>
-<p>En el ejemplo, se omite <code>test_min()</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="err">!</span><span class="n">pytest</span> <span class="n">skipping</span><span class="o">.</span><span class="n">py</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>[1m============================= test session starts ==============================[0m
-platform linux -- Python 3.8.5, pytest-5.4.3, py-1.10.0, pluggy-0.13.1
-rootdir: /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing
-plugins: hypothesis-5.49.0, cov-2.11.1
-collected 2 items                                                              [0m
 
-skipping.py [33ms[0m[32m.[0m[32m                                                           [100%][0m
 
-[32m========================= [32m[1m1 passed[0m, [33m1 skipped[0m[32m in 0.02s[0m[32m =========================[0m
-</code></pre></div>
-<h2 id="pytest-xfail">Pytest Xfail</h2>
-<p>Podemos usar el marcador <code>xfail</code> para indicar que espera que falle una prueba.</p>
-<p>Un caso de uso común para esto es cuando encuentra un error en su software y escribe una prueba para documentar cómo debería comportarse el software. Esta prueba, por supuesto, fallará hasta que corrija el error. </p>
-<p>Para evitar tener una prueba fallida, marca la prueba como <code>xfail</code>. Una vez que se corrige el error, elimina el marcador xfail y tiene una prueba de regresión que asegura que el error no se repita.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">xfail</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">import</span> <span class="nn">pytest</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">xfail</span> <span class="o">=</span> <span class="n">pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">xfail</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nd">@xfail</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="k">def</span> <span class="nf">test_hello</span><span class="p">():</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="k">assert</span> <span class="mi">0</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nd">@xfail</span><span class="p">(</span><span class="n">run</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="k">def</span> <span class="nf">test_hello2</span><span class="p">():</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    <span class="k">assert</span> <span class="mi">0</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
-<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="nd">@xfail</span><span class="p">(</span><span class="s2">&quot;hasattr(os, &#39;sep&#39;)&quot;</span><span class="p">)</span>
-<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="k">def</span> <span class="nf">test_hello3</span><span class="p">():</span>
-<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>    <span class="k">assert</span> <span class="mi">0</span>
-<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
-<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="nd">@xfail</span><span class="p">(</span><span class="n">reason</span><span class="o">=</span><span class="s2">&quot;bug 110&quot;</span><span class="p">)</span>
-<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="k">def</span> <span class="nf">test_hello4</span><span class="p">():</span>
-<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>    <span class="k">assert</span> <span class="mi">0</span>
-<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
-<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="nd">@xfail</span><span class="p">(</span><span class="s1">&#39;pytest.__version__[0] != &quot;17&quot;&#39;</span><span class="p">)</span>
-<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="k">def</span> <span class="nf">test_hello5</span><span class="p">():</span>
-<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>    <span class="k">assert</span> <span class="mi">0</span>
-<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>
-<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="k">def</span> <span class="nf">test_hello6</span><span class="p">():</span>
-<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>    <span class="n">pytest</span><span class="o">.</span><span class="n">xfail</span><span class="p">(</span><span class="s2">&quot;reason&quot;</span><span class="p">)</span>
-<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>
-<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="nd">@xfail</span><span class="p">(</span><span class="n">raises</span><span class="o">=</span><span class="ne">IndexError</span><span class="p">)</span>
-<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="k">def</span> <span class="nf">test_hello7</span><span class="p">():</span>
-<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>    <span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
-<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>    <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing xfail.py
-</code></pre></div>
-<p>En este caso, todos los test serán ignorados (con una <strong>x</strong>), lo cuál no afectará al resto de los tests (suponiendo que los tests pasen correctamente).</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="err">!</span><span class="n">pytest</span> <span class="n">xfail</span><span class="o">.</span><span class="n">py</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>[1m============================= test session starts ==============================[0m
-platform linux -- Python 3.8.5, pytest-5.4.3, py-1.10.0, pluggy-0.13.1
-rootdir: /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing
-plugins: hypothesis-5.49.0, cov-2.11.1
-collected 7 items                                                              [0m
 
-xfail.py [33mx[0m[33mx[0m[33mx[0m[33mx[0m[33mx[0m[33mx[0m[33mx[0m[33m                                                         [100%][0m
-
-[33m============================== [33m[1m7 xfailed[0m[33m in 0.13s[0m[33m ==============================[0m
-</code></pre></div>
-<h2 id="pytest-marking">Pytest marking</h2>
-<p>Podemos usar marcadores para organizar los test unitarios.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">marking</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">import</span> <span class="nn">pytest</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">a</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="k">def</span> <span class="nf">test_a1</span><span class="p">():</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="k">assert</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">a</span>
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="k">def</span> <span class="nf">test_a2</span><span class="p">():</span>
-<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
-<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>    <span class="k">assert</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
-<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">a</span>
-<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="k">def</span> <span class="nf">test_a3</span><span class="p">():</span>
-<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>
-<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>    <span class="k">assert</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>
-<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">b</span>
-<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="k">def</span> <span class="nf">test_b1</span><span class="p">():</span>
-<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>
-<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>    <span class="k">assert</span> <span class="s2">&quot;falcon&quot;</span> <span class="o">==</span> <span class="s2">&quot;fal&quot;</span> <span class="o">+</span> <span class="s2">&quot;con&quot;</span>
-<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>
-<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">b</span>
-<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="k">def</span> <span class="nf">test_b2</span><span class="p">():</span>
-<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>
-<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>    <span class="k">assert</span> <span class="s2">&quot;falcon&quot;</span> <span class="o">==</span> <span class="sa">f</span><span class="s2">&quot;fal</span><span class="si">{</span><span class="s1">&#39;con&#39;</span><span class="si">}</span><span class="s2">&quot;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing marking.py
-</code></pre></div>
-<p>Tenemos dos grupos de tests identificados por marcadores, <span class="arithmatex">\(a\)</span> y <span class="arithmatex">\(b\)</span>. Estas unidades son ejecutadas por <code>pytest -m a marking.py</code> y <code>pytest -m b marking.py</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="err">!</span><span class="n">pytest</span> <span class="o">-</span><span class="n">m</span> <span class="n">a</span> <span class="n">marking</span><span class="o">.</span><span class="n">py</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>[1m============================= test session starts ==============================[0m
-platform linux -- Python 3.8.5, pytest-5.4.3, py-1.10.0, pluggy-0.13.1
-rootdir: /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing
-plugins: hypothesis-5.49.0, cov-2.11.1
-collected 5 items / 2 deselected / 3 selected                                  [0m
-
-marking.py [32m.[0m[32m.[0m[32m.[0m[33m                                                           [100%][0m
-
-[33m=============================== warnings summary ===============================[0m
-marking.py:3
-  /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing/marking.py:3: PytestUnknownMarkWarning: Unknown pytest.mark.a - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
-    @pytest.mark.a
-
-marking.py:8
-  /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing/marking.py:8: PytestUnknownMarkWarning: Unknown pytest.mark.a - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
-    @pytest.mark.a
-
-marking.py:13
-  /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing/marking.py:13: PytestUnknownMarkWarning: Unknown pytest.mark.a - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
-    @pytest.mark.a
-
-marking.py:18
-  /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing/marking.py:18: PytestUnknownMarkWarning: Unknown pytest.mark.b - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
-    @pytest.mark.b
-
-marking.py:23
-  /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing/marking.py:23: PytestUnknownMarkWarning: Unknown pytest.mark.b - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
-    @pytest.mark.b
-
--- Docs: https://docs.pytest.org/en/latest/warnings.html
-[33m================= [32m3 passed[0m, [33m[1m2 deselected[0m, [33m[1m5 warnings[0m[33m in 0.02s[0m[33m ==================[0m
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="err">!</span><span class="n">pytest</span> <span class="o">-</span><span class="n">m</span> <span class="n">b</span> <span class="n">marking</span><span class="o">.</span><span class="n">py</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>[1m============================= test session starts ==============================[0m
-platform linux -- Python 3.8.5, pytest-5.4.3, py-1.10.0, pluggy-0.13.1
-rootdir: /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing
-plugins: hypothesis-5.49.0, cov-2.11.1
-collected 5 items / 3 deselected / 2 selected                                  [0m
-
-marking.py [32m.[0m[32m.[0m[33m                                                            [100%][0m
-
-[33m=============================== warnings summary ===============================[0m
-marking.py:3
-  /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing/marking.py:3: PytestUnknownMarkWarning: Unknown pytest.mark.a - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
-    @pytest.mark.a
-
-marking.py:8
-  /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing/marking.py:8: PytestUnknownMarkWarning: Unknown pytest.mark.a - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
-    @pytest.mark.a
-
-marking.py:13
-  /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing/marking.py:13: PytestUnknownMarkWarning: Unknown pytest.mark.a - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
-    @pytest.mark.a
-
-marking.py:18
-  /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing/marking.py:18: PytestUnknownMarkWarning: Unknown pytest.mark.b - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
-    @pytest.mark.b
-
-marking.py:23
-  /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing/marking.py:23: PytestUnknownMarkWarning: Unknown pytest.mark.b - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
-    @pytest.mark.b
-
--- Docs: https://docs.pytest.org/en/latest/warnings.html
-[33m================= [32m2 passed[0m, [33m[1m3 deselected[0m, [33m[1m5 warnings[0m[33m in 0.02s[0m[33m ==================[0m
-</code></pre></div>
-<h2 id="pytest-parameterized-tests">Pytest parameterized tests</h2>
-<p>Con los tests parametrizados, podemos agregar múltiples valores a nuestras afirmaciones. Usamos el decorador <code>@pytest.mark.parametrize</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">parameterized</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kn">import</span> <span class="nn">algo</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="kn">import</span> <span class="nn">pytest</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span><span class="s2">&quot;data, expected&quot;</span><span class="p">,</span> <span class="p">[((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="mi">1</span><span class="p">),</span> 
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="p">((</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span> <span class="o">-</span><span class="mi">2</span><span class="p">),</span> <span class="p">((</span><span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">),</span> <span class="mi">0</span><span class="p">)])</span>
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="k">def</span> <span class="nf">test_min</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
-<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>
-<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>    <span class="n">val</span> <span class="o">=</span> <span class="n">algo</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>    <span class="k">assert</span> <span class="n">val</span> <span class="o">==</span> <span class="n">expected</span>
-<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
-<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span><span class="s2">&quot;data, expected&quot;</span><span class="p">,</span> <span class="p">[((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="mi">6</span><span class="p">),</span> 
-<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>    <span class="p">((</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span> <span class="mi">12</span><span class="p">),</span> <span class="p">((</span><span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">),</span> <span class="mi">400</span><span class="p">)])</span>
-<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="k">def</span> <span class="nf">test_max</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
-<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>
-<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>    <span class="n">val</span> <span class="o">=</span> <span class="n">algo</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>    <span class="k">assert</span> <span class="n">val</span> <span class="o">==</span> <span class="n">expected</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing parameterized.py
-</code></pre></div>
-<p>Pasamos dos valores a la función de testeo: los datos y el valor esperado. En nuestro caso, probamos la función <code>min()</code> con tres tuplas de datos.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="err">!</span><span class="n">pytest</span> <span class="n">parameterized</span><span class="o">.</span><span class="n">py</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>[1m============================= test session starts ==============================[0m
-platform linux -- Python 3.8.5, pytest-5.4.3, py-1.10.0, pluggy-0.13.1
-rootdir: /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing
-plugins: hypothesis-5.49.0, cov-2.11.1
-collected 6 items                                                              [0m
-
-parameterized.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                  [100%][0m
-
-[32m============================== [32m[1m6 passed[0m[32m in 0.03s[0m[32m ===============================[0m
-</code></pre></div>
-<h2 id="pytest-fixtures">Pytest fixtures</h2>
-<p>Los tests deben ejecutarse en el contexto de un conjunto conocido de objetos. Este conjunto de objetos se denomina <code>test fixture</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">algo2</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">def</span> <span class="nf">sel_sort</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>        <span class="n">vals</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>        <span class="n">vals</span> <span class="o">=</span> <span class="n">data</span>
-<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
-<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>    <span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span>
-<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
-<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">size</span><span class="p">):</span>
-<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>
-<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="p">):</span>
-<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>
-<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>            <span class="k">if</span> <span class="n">vals</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">vals</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
-<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>                <span class="n">_min</span> <span class="o">=</span> <span class="n">vals</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>                <span class="n">vals</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">vals</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>                <span class="n">vals</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">_min</span>
-<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>    <span class="k">return</span> <span class="n">vals</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing algo2.py
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">fixtures</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="kn">import</span> <span class="nn">algo2</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="kn">import</span> <span class="nn">pytest</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="c1"># fijar valor data</span>
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
-<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="k">def</span> <span class="nf">data</span><span class="p">():</span>
-<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>    <span class="k">return</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
-<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
-<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="c1"># pasar data como argumento del test</span>
-<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="k">def</span> <span class="nf">test_sel_sort</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>    <span class="n">sorted_vals</span> <span class="o">=</span> <span class="n">algo2</span><span class="o">.</span><span class="n">sel_sort</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>    <span class="k">assert</span> <span class="n">sorted_vals</span> <span class="o">==</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing fixtures.py
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="err">!</span><span class="n">pytest</span> <span class="n">fixtures</span><span class="o">.</span><span class="n">py</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>[1m============================= test session starts ==============================[0m
-platform linux -- Python 3.8.5, pytest-5.4.3, py-1.10.0, pluggy-0.13.1
-rootdir: /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing
-plugins: hypothesis-5.49.0, cov-2.11.1
-collected 1 item                                                               [0m
-
-fixtures.py [32m.[0m[32m                                                            [100%][0m
-
-[32m============================== [32m[1m1 passed[0m[32m in 0.02s[0m[32m ===============================[0m
-</code></pre></div>
-<p><strong>Observación</strong>: para realizar los siguientes ejemplos, es necesario eliminar todos los archivos <code>.py</code> previos. </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># eliminar archivos .py</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="err">!</span><span class="n">rm</span> <span class="o">*.</span><span class="n">py</span>
-</code></pre></div>
-<h2 id="pytest-layouts">Pytest layouts</h2>
-<p>Los tests de Python se pueden organizar de varias formas. Los tests se pueden integrar en el paquete de Python o pueden descansar fuera de la librería.</p>
-<h3 id="integrated-tests">Integrated tests</h3>
-<p>A continuación, mostramos cómo ejecutar pruebas dentro de un paquete de Python.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>setup.py
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>utils
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>│   algo.py
-<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>│   srel.py
-<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>│   __init__.py
-<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>│
-<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>└───tests
-<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>        algo_test.py
-<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>        srel_test.py
-<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>        __init__.py
-</code></pre></div>
-<p>Tenemos este diseño del paquete. Los test se encuentran en el subdirectorio de <strong>tests</strong> dentro del paquete.</p>
-<h3 id="a-crear-archivos-previos-del-ejemplos">a) crear archivos previos del ejemplos</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># crear carpetas</span>
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="err">!</span><span class="n">mkdir</span> <span class="n">utils</span> <span class="n">tests</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># agregar archivo __init__.py</span>
-<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="err">!</span><span class="n">touch</span> <span class="n">utils</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span> 
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># agregar archivo __init__.py</span>
-<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="err">!</span><span class="n">touch</span> <span class="n">tests</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
-</code></pre></div>
-<h3 id="b-crear-archivos-py-a-testear">b) crear archivos .py a testear</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">find_packages</span>
-<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="n">setup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;utils&quot;</span><span class="p">,</span> <span class="n">packages</span><span class="o">=</span><span class="n">find_packages</span><span class="p">())</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing setup.py
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">utils</span><span class="o">/</span><span class="n">algo</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">def</span> <span class="nf">sel_sort</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
-<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>        <span class="n">vals</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>    <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>        <span class="n">vals</span> <span class="o">=</span> <span class="n">data</span>
-<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
-<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>    <span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span>
-<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>
-<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">size</span><span class="p">):</span>
-<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>
-<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="p">):</span>
-<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>
-<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>            <span class="k">if</span> <span class="n">vals</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">vals</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
-<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>                <span class="n">_min</span> <span class="o">=</span> <span class="n">vals</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>                <span class="n">vals</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">vals</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>                <span class="n">vals</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">_min</span>
-<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>    <span class="k">return</span> <span class="n">vals</span>
-<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a>
-<a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a><span class="k">def</span> <span class="nf">max</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
-<a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a>    <span class="n">_max</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<a id="__codelineno-21-22" name="__codelineno-21-22" href="#__codelineno-21-22"></a>    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
-<a id="__codelineno-21-23" name="__codelineno-21-23" href="#__codelineno-21-23"></a>        <span class="k">if</span> <span class="n">val</span> <span class="o">&gt;</span> <span class="n">_max</span><span class="p">:</span>
-<a id="__codelineno-21-24" name="__codelineno-21-24" href="#__codelineno-21-24"></a>            <span class="n">_max</span> <span class="o">=</span> <span class="n">val</span>
-<a id="__codelineno-21-25" name="__codelineno-21-25" href="#__codelineno-21-25"></a>
-<a id="__codelineno-21-26" name="__codelineno-21-26" href="#__codelineno-21-26"></a>    <span class="k">return</span> <span class="n">_max</span>
-<a id="__codelineno-21-27" name="__codelineno-21-27" href="#__codelineno-21-27"></a>
-<a id="__codelineno-21-28" name="__codelineno-21-28" href="#__codelineno-21-28"></a>
-<a id="__codelineno-21-29" name="__codelineno-21-29" href="#__codelineno-21-29"></a><span class="k">def</span> <span class="nf">min</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
-<a id="__codelineno-21-30" name="__codelineno-21-30" href="#__codelineno-21-30"></a>    <span class="n">_min</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<a id="__codelineno-21-31" name="__codelineno-21-31" href="#__codelineno-21-31"></a>
-<a id="__codelineno-21-32" name="__codelineno-21-32" href="#__codelineno-21-32"></a>    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
-<a id="__codelineno-21-33" name="__codelineno-21-33" href="#__codelineno-21-33"></a>        <span class="k">if</span> <span class="n">val</span> <span class="o">&lt;</span> <span class="n">_min</span><span class="p">:</span>
-<a id="__codelineno-21-34" name="__codelineno-21-34" href="#__codelineno-21-34"></a>            <span class="n">_min</span> <span class="o">=</span> <span class="n">val</span>
-<a id="__codelineno-21-35" name="__codelineno-21-35" href="#__codelineno-21-35"></a>
-<a id="__codelineno-21-36" name="__codelineno-21-36" href="#__codelineno-21-36"></a>    <span class="k">return</span> <span class="n">_min</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing utils/algo.py
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">utils</span><span class="o">/</span><span class="n">srel</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
-<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="k">def</span> <span class="nf">is_palindrome</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
-<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>    <span class="k">return</span> <span class="n">val</span> <span class="o">==</span> <span class="n">val</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing utils/srel.py
-</code></pre></div>
-<h3 id="c-crear-los-tests">c) crear los tests</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">tests</span><span class="o">/</span><span class="n">algo_test</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="kn">import</span> <span class="nn">utils.algo</span>
-<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="kn">import</span> <span class="nn">pytest</span>
-<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>
-<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span>
-<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>    <span class="s2">&quot;data&quot;</span><span class="p">,</span>
-<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>    <span class="p">[</span>
-<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>        <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
-<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>        <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
-<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>    <span class="p">]</span>
-<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="p">)</span>
-<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="k">def</span> <span class="nf">test_sel_sort</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>    <span class="n">sorted_vals</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">algo</span><span class="o">.</span><span class="n">sel_sort</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>    <span class="k">assert</span> <span class="n">sorted_vals</span> <span class="o">==</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>
-<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
-<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a><span class="k">def</span> <span class="nf">values</span><span class="p">():</span>
-<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a>    <span class="k">return</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a>
-<a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a><span class="k">def</span> <span class="nf">test_min</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
-<a id="__codelineno-23-21" name="__codelineno-23-21" href="#__codelineno-23-21"></a>    <span class="n">val</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">algo</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-<a id="__codelineno-23-22" name="__codelineno-23-22" href="#__codelineno-23-22"></a>    <span class="k">assert</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">1</span>
-<a id="__codelineno-23-23" name="__codelineno-23-23" href="#__codelineno-23-23"></a>
-<a id="__codelineno-23-24" name="__codelineno-23-24" href="#__codelineno-23-24"></a><span class="k">def</span> <span class="nf">test_max</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
-<a id="__codelineno-23-25" name="__codelineno-23-25" href="#__codelineno-23-25"></a>    <span class="n">val</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">algo</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-<a id="__codelineno-23-26" name="__codelineno-23-26" href="#__codelineno-23-26"></a>    <span class="k">assert</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">6</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing tests/algo_test.py
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="o">%%</span><span class="n">writefile</span> <span class="n">tests</span><span class="o">/</span><span class="n">srel_test</span><span class="o">.</span><span class="n">py</span>
-<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="kn">import</span> <span class="nn">utils.srel</span>
-<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="kn">import</span> <span class="nn">pytest</span>
-<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>
-<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span>
-<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>    <span class="s2">&quot;word, expected&quot;</span><span class="p">,</span> 
-<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>    <span class="p">[</span>
-<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>        <span class="p">(</span><span class="s1">&#39;kayak&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> 
-<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>        <span class="p">(</span><span class="s1">&#39;civic&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> 
-<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>        <span class="p">(</span><span class="s1">&#39;forest&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
-<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>    <span class="p">]</span>
-<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="p">)</span>
-<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="k">def</span> <span class="nf">test_palindrome</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">expected</span><span class="p">):</span>
-<a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>
-<a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>    <span class="n">val</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">srel</span><span class="o">.</span><span class="n">is_palindrome</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
-<a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>    <span class="k">assert</span> <span class="n">val</span> <span class="o">==</span> <span class="n">expected</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Writing tests/srel_test.py
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># dejar tests en la ruta correcta</span>
-<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="err">!</span><span class="n">mv</span> <span class="n">tests</span> <span class="n">utils</span>
-</code></pre></div>
-<h3 id="d-correr-los-test">d) correr los test !</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="err">!</span><span class="n">pytest</span> <span class="o">--</span><span class="n">pyargs</span> <span class="n">utils</span> 
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>[1m============================= test session starts ==============================[0m
-platform linux -- Python 3.8.5, pytest-5.4.3, py-1.10.0, pluggy-0.13.1
-rootdir: /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing
-plugins: hypothesis-5.49.0, cov-2.11.1
-collected 7 items                                                              [0m
-
-utils/tests/algo_test.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                            [ 57%][0m
-utils/tests/srel_test.py [32m.[0m[32m.[0m[32m.[0m[32m                                             [100%][0m
-
-[32m============================== [32m[1m7 passed[0m[32m in 0.04s[0m[32m ===============================[0m
-</code></pre></div>
-<h2 id="tests-outside-the-package">Tests outside the package</h2>
-<p>El siguiente ejemplo muestra un diseño dela aplicación donde los tests no están integrados dentro del paquete.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>setup.py
-<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>src
-<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>└───utils
-<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>│       algo.py
-<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>│       srel.py
-<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>tests
-<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>    algo_test.py
-<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>    srel_test.py
-</code></pre></div>
-<p>En este diseño, tenemos tets fuera del árbol de fuentes. </p>
-<h3 id="a-crear-diseno-del-ejemplo">a) crear diseño del ejemplo</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># crear carpeta src</span>
-<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="err">!</span><span class="n">mkdir</span> <span class="n">src</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="c1"># mover carpeta utils</span>
-<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="err">!</span><span class="n">mv</span> <span class="n">utils</span>  <span class="n">src</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="c1"># mover carpeta tests</span>
-<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="err">!</span><span class="n">mv</span> <span class="n">src</span><span class="o">/</span><span class="n">utils</span><span class="o">/</span><span class="n">tests</span>  <span class="n">src</span><span class="o">/</span>
-</code></pre></div>
-<h3 id="b-correr-los-test">b) Correr los test !</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="err">!</span><span class="n">pytest</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>[1m============================= test session starts ==============================[0m
-platform linux -- Python 3.8.5, pytest-5.4.3, py-1.10.0, pluggy-0.13.1
-rootdir: /home/fralfaro/PycharmProjects/python_development_tools/python_development_tools/testing
-plugins: hypothesis-5.49.0, cov-2.11.1
-collected 7 items                                                              [0m
-
-src/tests/algo_test.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                              [ 57%][0m
-src/tests/srel_test.py [32m.[0m[32m.[0m[32m.[0m[32m                                               [100%][0m
-
-[32m============================== [32m[1m7 passed[0m[32m in 0.04s[0m[32m ===============================[0m
-</code></pre></div>
-<p><strong>Observación</strong>: al final de cada presentación, se eliminan los archivos que generamos de manera temporal.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="c1"># eliminar archivos temporales</span>
-<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="c1">#!rm -r cov_annotate cov_html htmlcov src *.py *.xml</span>
-</code></pre></div>
-
-              
-            </article>
-          </div>
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Pie">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pie" >
       
         
         <a href="../intro/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Introducción" rel="prev">
@@ -1977,13 +1762,13 @@ src/tests/srel_test.py [32m.[0m[32m.[0m[32m.[0m[32m                      
       
       
         
-        <a href="../mocker/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Mocker" rel="next">
+        <a href="../hypothesis/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Hypothesis" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Siguiente
               </span>
-              Mocker
+              Hypothesis
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -2013,10 +1798,11 @@ src/tests/srel_test.py [32m.[0m[32m.[0m[32m.[0m[32m                      
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
@@ -2024,6 +1810,7 @@ src/tests/srel_test.py [32m.[0m[32m.[0m[32m.[0m[32m                      
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
+    
     
   </body>
 </html>

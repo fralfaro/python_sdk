@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://github.com/fralfaro/python_sdk/setup/pyenv/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
     
     
       
@@ -21,12 +21,14 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
         
       
+      
+
     
     
     
@@ -41,10 +43,11 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -69,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyenv" class="md-skip">
+        <a href="#pyenv-gestion-de-versiones" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -113,6 +116,7 @@
         
           
           
+          
           <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
@@ -120,6 +124,7 @@
             </label>
           
         
+          
           
           
           <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
@@ -147,7 +152,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -171,7 +176,7 @@
         <a href="https://github.com/fralfaro/python_sdk" title="Ir al repositorio" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     fralfaro/python_sdk
@@ -216,7 +221,7 @@
       <a href="https://github.com/fralfaro/python_sdk" title="Ir al repositorio" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     fralfaro/python_sdk
@@ -313,6 +318,13 @@
         <li class="md-nav__item">
   <a href="#introduccion" class="md-nav__link">
     Introducción
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-pyenv-y-por-que-es-importante" class="md-nav__link">
+    ¿Qué es Pyenv y por qué es importante?
   </a>
   
 </li>
@@ -415,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop/" class="md-nav__link">
+      <a href="../../oop/oop.md" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -429,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_conceptos_basicos/" class="md-nav__link">
+      <a href="../../oop/oop_conceptos_basicos.md" class="md-nav__link">
         Conceptos Básicos
       </a>
     </li>
@@ -443,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_herencia/" class="md-nav__link">
+      <a href="../../oop/oop_herencia.md" class="md-nav__link">
         Herencia
       </a>
     </li>
@@ -457,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_cohesion/" class="md-nav__link">
+      <a href="../../oop/oop_cohesion.md" class="md-nav__link">
         Cohesion
       </a>
     </li>
@@ -471,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_abstraccion/" class="md-nav__link">
+      <a href="../../oop/oop_abstraccion.md" class="md-nav__link">
         Abstraccion
       </a>
     </li>
@@ -485,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_polimorfismo/" class="md-nav__link">
+      <a href="../../oop/oop_polimorfismo.md" class="md-nav__link">
         Polimorfismo
       </a>
     </li>
@@ -499,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_acoplamiento/" class="md-nav__link">
+      <a href="../../oop/oop_acoplamiento.md" class="md-nav__link">
         Acoplamiento
       </a>
     </li>
@@ -513,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/oop_encapsulamiento/" class="md-nav__link">
+      <a href="../../oop/oop_encapsulamiento.md" class="md-nav__link">
         Encapsulamiento
       </a>
     </li>
@@ -561,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/intro/" class="md-nav__link">
+      <a href="../../patterns/intro.md" class="md-nav__link">
         Introduccion
       </a>
     </li>
@@ -575,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/creacionales/" class="md-nav__link">
+      <a href="../../patterns/creacionales.md" class="md-nav__link">
         Patrones de creación
       </a>
     </li>
@@ -589,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/estructurales/" class="md-nav__link">
+      <a href="../../patterns/estructurales.md" class="md-nav__link">
         Patrones estructurales
       </a>
     </li>
@@ -603,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../patterns/comportamiento/" class="md-nav__link">
+      <a href="../../patterns/comportamiento.md" class="md-nav__link">
         Patrones de comportamiento
       </a>
     </li>
@@ -651,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/intro/" class="md-nav__link">
+      <a href="../../solid/intro.md" class="md-nav__link">
         Introduccion
       </a>
     </li>
@@ -665,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/1_srp/" class="md-nav__link">
+      <a href="../../solid/1_srp.md" class="md-nav__link">
         Single Responsibility Principle
       </a>
     </li>
@@ -679,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/2_ocp/" class="md-nav__link">
+      <a href="../../solid/2_ocp.md" class="md-nav__link">
         Single Responsibility Principle
       </a>
     </li>
@@ -693,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/3_lsp/" class="md-nav__link">
+      <a href="../../solid/3_lsp.md" class="md-nav__link">
         Liskov Substitution Principle
       </a>
     </li>
@@ -707,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/4_isp/" class="md-nav__link">
+      <a href="../../solid/4_isp.md" class="md-nav__link">
         Interface Segregation Principle
       </a>
     </li>
@@ -721,7 +733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../solid/5_dip/" class="md-nav__link">
+      <a href="../../solid/5_dip.md" class="md-nav__link">
         Dependency Inversion Principle
       </a>
     </li>
@@ -769,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/code_quality/" class="md-nav__link">
+      <a href="../../code_quality/code_quality.md" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -783,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/black/" class="md-nav__link">
+      <a href="../../code_quality/black.md" class="md-nav__link">
         Black
       </a>
     </li>
@@ -797,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/flake8/" class="md-nav__link">
+      <a href="../../code_quality/flake8.md" class="md-nav__link">
         Flake8
       </a>
     </li>
@@ -811,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/mypy/" class="md-nav__link">
+      <a href="../../code_quality/mypy.md" class="md-nav__link">
         Mypy
       </a>
     </li>
@@ -825,7 +837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../code_quality/precommit/" class="md-nav__link">
+      <a href="../../code_quality/precommit.md" class="md-nav__link">
         Pre-commit
       </a>
     </li>
@@ -901,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/mocker/" class="md-nav__link">
+      <a href="../../testing/mocker.md" class="md-nav__link">
         Mocker
       </a>
     </li>
@@ -929,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/plugins/" class="md-nav__link">
+      <a href="../../testing/plugins.md" class="md-nav__link">
         Plugins
       </a>
     </li>
@@ -991,7 +1003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/commenting/" class="md-nav__link">
+      <a href="../../documentation/commenting.md" class="md-nav__link">
         Comentar vs Documentar
       </a>
     </li>
@@ -1005,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/documenting/" class="md-nav__link">
+      <a href="../../documentation/documenting.md" class="md-nav__link">
         Docstrings
       </a>
     </li>
@@ -1019,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/project/" class="md-nav__link">
+      <a href="../../documentation/project.md" class="md-nav__link">
         Documentar en Python
       </a>
     </li>
@@ -1033,7 +1045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/sphinx/" class="md-nav__link">
+      <a href="../../documentation/sphinx.md" class="md-nav__link">
         Sphinx
       </a>
     </li>
@@ -1081,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/click/" class="md-nav__link">
+      <a href="../../ecosystem/click.md" class="md-nav__link">
         Click
       </a>
     </li>
@@ -1095,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/loguru/" class="md-nav__link">
+      <a href="../../ecosystem/loguru.md" class="md-nav__link">
         Loguru
       </a>
     </li>
@@ -1109,7 +1121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/loguru/" class="md-nav__link">
+      <a href="../../ecosystem/loguru.md" class="md-nav__link">
         Loguru
       </a>
     </li>
@@ -1123,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/plantuml/" class="md-nav__link">
+      <a href="../../ecosystem/plantuml.md" class="md-nav__link">
         Plantuml
       </a>
     </li>
@@ -1137,7 +1149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecosystem/diagrams/" class="md-nav__link">
+      <a href="../../ecosystem/diagrams.md" class="md-nav__link">
         Diagrams
       </a>
     </li>
@@ -1185,6 +1197,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#que-es-pyenv-y-por-que-es-importante" class="md-nav__link">
+    ¿Qué es Pyenv y por qué es importante?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#instalacion" class="md-nav__link">
     Instalación
   </a>
@@ -1213,53 +1232,61 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
-<h1 id="pyenv">Pyenv</h1>
+<h1 id="pyenv-gestion-de-versiones">Pyenv: Gestión de Versiones</h1>
 <h2 id="introduccion">Introducción</h2>
-<p>Al instalar un sistema operativo, es probable que ya venga con una distribución de Python pre-existente; en el caso de distribuciones de Linux basadas en Debian y Mac ésta suele ser Python 2.7; otras traen tanto Python 2.7 como Python 3.6; mientras que Windows no trae Python pre-instalado. Éstas instalaciones suelen llamarse como <em>System Python</em> o la versión de Python del sistema, y posee todas las librerias que el <strong>Sistema Operativo</strong> utiliza durante su funcionamiento regular.</p>
-<p>Cuando queremos desarrollar software en Python, un riesgo que queremos mitigar es el de instalar erróneamente un paquete en <em>System Python</em> y <strong>modificar las librerias que el sistema operativo utiliza para su correcto funcionamiento</strong>, lo que podría tener consecuencias catastróficas si no sabemos qué es lo que estamos haciendo.</p>
-<p>Por otro lado además nos gustaría usar <strong>distintas versiones de Python que la pre-instalada en el sistema operativo</strong> y tener un mecanismo para instalar dependencias de forma segura sobre esas instalaciones específicas y no sobre <em>System Python</em>. Esto es especialmente importante cuando se desarrollan librerías que deben probarse para varias versiones de Python distintas de manera simultánea.
-html_img_enable=true,
-<a href="https://github.com/pyenv/pyenv">Pyenv</a> nos ayuda a resolver ambos problemas, y entre sus utilidades nos permite instalar distintas versiones de Python en un directorio aparte, y además nos permite configurar que versión de Python deseamos usar para cada caso. </p>
-<p>Consiste en una herramienta que construye de manera nativa cualquier versión de Python desde su codigo fuente y luego la instala de manera local en el computador, permitiéndonos usar desde las versiones más antiguas de Python (por si tenemos que mantener algun desarrollo <em>legacy</em>) hasta las versiones más experimentales que aún no se consideran estables.</p>
+<p>El entorno de desarrollo en Python es diverso y versátil, pero también presenta desafíos, especialmente cuando se trata de la gestión de las versiones de Python y las dependencias. Al instalar un sistema operativo, es común encontrarse con una versión de Python preexistente, a menudo denominada "System Python", que es fundamental para el funcionamiento del sistema operativo. Modificar esta instalación puede ser riesgoso y desaconsejable, ya que podría afectar el funcionamiento del sistema en su conjunto.</p>
+<p>Además, en el desarrollo de software en Python, es probable que necesitemos trabajar con versiones específicas de Python que no coincidan con la preinstalada en el sistema operativo. Esto es esencial cuando se desarrollan proyectos que deben ser compatibles con múltiples versiones de Python.</p>
+<p>Es aquí donde entra en juego <a href="https://github.com/pyenv/pyenv">Pyenv</a>, una herramienta esencial para cualquier desarrollador de Python.</p>
 <p><img alt="pyenv" src="../img/pyenv-pyramid.webp" /></p>
+<h2 id="que-es-pyenv-y-por-que-es-importante">¿Qué es Pyenv y por qué es importante?</h2>
+<p><strong>Pyenv</strong> es una poderosa herramienta que resuelve ambos problemas mencionados. Permite instalar y gestionar múltiples versiones de Python de forma segura y aislada en su propio entorno. Esto significa que puedes utilizar la versión específica de Python que necesitas para cada proyecto sin preocuparte por afectar el "System Python". Pyenv también es útil para probar tu código en diferentes versiones de Python de manera simultánea.</p>
 <h2 id="instalacion">Instalación</h2>
-<p>Para Linux y Mac lo recomendable es instalar todos los pre-requisitos guiándose en <a href="https://github.com/pyenv/pyenv/wiki/Common-build-problems#prerequisites">esta guia</a> y luego usar <a href="https://github.com/pyenv/pyenv-installer">pyenv-installer</a></p>
+<p>La instalación de Pyenv es sencilla y altamente recomendada para cualquier desarrollador de Python. Para usuarios de Linux y Mac, se proporciona una <a href="https://github.com/pyenv/pyenv/wiki/Common-build-problems#prerequisites">guía detallada</a> que te ayudará a configurar los pre-requisitos necesarios antes de usar <a href="https://github.com/pyenv/pyenv-installer">pyenv-installer</a> para instalar Pyenv en tu sistema.</p>
 <h2 id="uso">Uso</h2>
-<p>Si necesitamos una versión de Python específica podemos usar pyenv para instalarla de la siguiente forma:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">pyenv</span> <span class="n">install</span> <span class="o">&lt;</span><span class="n">VERSION</span><span class="o">&gt;</span>
-</code></pre></div>
-<p>También podemos ver qué versiones de Python se pueden instalar usando:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">pyenv</span> <span class="n">install</span> <span class="o">-</span><span class="n">l</span>
-</code></pre></div>
-<p>La lista es muy bastante amplia; Miniconda, Anaconda, Cython, Pypy, Jython, entre otras están disponibles para ser instaladas usando esta herramienta.</p>
+<p>Una vez que tienes Pyenv instalado, puedes aprovechar sus funcionalidades de la siguiente manera:</p>
+<ul>
+<li>
+<p><strong>Instalación de Versiones de Python</strong>: Utiliza el comando <code>pyenv install &lt;VERSION&gt;</code> para instalar la versión específica de Python que necesitas para tu proyecto.</p>
+</li>
+<li>
+<p><strong>Exploración de Versiones Disponibles</strong>: Puedes ver la lista de versiones de Python disponibles para instalación utilizando <code>pyenv install -l</code>. La variedad es amplia, desde Miniconda y Anaconda hasta Cython, Pypy y Jython.</p>
+</li>
+</ul>
 <h2 id="recomendaciones">Recomendaciones</h2>
 <ul>
 <li>
-<p>Luego de instalar pyenv y alguna version de Python con la que te sientas cómodo, configura pyenv para que desde ahora en adelante cuando llames a Python (a menos que especifiques otra cosa) se llame siempre por defecto a la nueva instalación y no a <em>System Python</em>. Para esto ejecuta:
- <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>   pyenv global &lt;VERSION&gt;
-</code></pre></div></p>
+<p>Configura Pyenv como tu versión de Python por defecto ejecutando <code>pyenv global &lt;VERSION&gt;</code>. Esto asegurará que siempre utilices la versión deseada, a menos que especifiques lo contrario.</p>
 </li>
 <li>
-<p>Una vez que tienes tu(s) intérprete(s) de Python listo(s), puedes manejar ambientes virtuales sobre estos mismos usando herramientas como Poetry o Pipenv.</p>
+<p>Para la gestión de entornos virtuales, considera herramientas como Poetry o Pipenv, que funcionan de manera excelente junto a Pyenv.</p>
 </li>
 </ul>
+<p>En resumen, Pyenv es una herramienta imprescindible para cualquier desarrollador de Python que desee mantener su entorno de desarrollo limpio y seguro, gestionar múltiples versiones de Python de manera efectiva y asegurarse de que sus proyectos funcionen de manera consistente en diferentes entornos. Simplifica tu experiencia de desarrollo con Pyenv y desbloquea todo el potencial de Python en tu trayectoria como desarrollador.</p>
 
-              
-            </article>
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Pie">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pie" >
       
         
         <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Anterior: Home" rel="prev">
@@ -1314,10 +1341,11 @@ html_img_enable=true,
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
@@ -1325,6 +1353,7 @@ html_img_enable=true,
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
+    
     
   </body>
 </html>
